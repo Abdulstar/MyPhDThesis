@@ -1,0 +1,129 @@
+{
+  "stage": "pretrained_checkpoint_compatibility_and_optional_smoke_test",
+  "code_revision": "bfb75415a6a31a41ddfeef34478eea1da227d19c",
+  "data_revision": "49cb6c10f28d17d6e9b70ccac27a7cf6e8a563c8",
+  "model_revision": "b6f2ac4ee659505da75b7e517649379334c55ad0",
+  "python": "3.8.20",
+  "torch": "1.12.1+cpu",
+  "device": "cpu",
+  "threads": 2,
+  "settings": {
+    "repo": "tabularbench",
+    "assets": "assets",
+    "out": "starter_pack/verified_run_v2",
+    "models": [
+      "default",
+      "madry"
+    ],
+    "attack": true,
+    "n_attack": 8,
+    "steps": 10,
+    "generations": 2,
+    "offspring": 20,
+    "eps": 0.5,
+    "seed": 0
+  },
+  "limitations": [
+    "Scaler fitted to all feature rows to match current upstream checkpoint loader; NOT a leakage-free research baseline.",
+    "Native test split only; CTU-Neris feature rows, not live packets, requests or general-network traffic.",
+    "Attack subset explicitly malicious and valid under metadata constraints; not the upstream helper's positional call.",
+    "Default attack configuration is a smoke test, not a published robust-score reproduction."
+  ],
+  "models": {
+    "default": {
+      "clean": {
+        "n": 55082,
+        "benign": 54675,
+        "malicious": 407,
+        "tn": 54587,
+        "fp": 88,
+        "fn": 9,
+        "tp": 398,
+        "accuracy": 0.9982389891434589,
+        "recall": 0.9778869778869779,
+        "false_positive_rate": 0.0016095107453132146,
+        "precision": 0.8189300411522634,
+        "auroc_positive_class": 0.9930477053933844,
+        "auroc_upstream_two_column_macro": 0.990568548346326,
+        "average_precision": 0.9606281908630416,
+        "majority_class_accuracy": 0.9926110163029664
+      },
+      "whole_test_prediction_wall_seconds": 0.5725330590000794,
+      "attack": {
+        "n_malicious_attacked": 8,
+        "clean_detected": 8,
+        "already_missed_before_attack": 0,
+        "returned_candidates_valid_and_in_budget": 8,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 1.0,
+        "clean_recall_on_same_subset": 1.0,
+        "upstream_one_minus_mdc_on_malicious_subset": 1.0,
+        "attack_wall_seconds": 5.249846654000066,
+        "max_returned_scaled_l2_distance": 0.0
+      }
+    },
+    "madry": {
+      "clean": {
+        "n": 55082,
+        "benign": 54675,
+        "malicious": 407,
+        "tn": 54633,
+        "fp": 42,
+        "fn": 11,
+        "tp": 396,
+        "accuracy": 0.9990377981917868,
+        "recall": 0.972972972972973,
+        "false_positive_rate": 0.0007681755829903978,
+        "precision": 0.9041095890410958,
+        "auroc_positive_class": 0.9932332781715498,
+        "auroc_upstream_two_column_macro": 0.9898473445387026,
+        "average_precision": 0.96684517054688,
+        "majority_class_accuracy": 0.9926110163029664
+      },
+      "whole_test_prediction_wall_seconds": 0.7254325119999976,
+      "attack": {
+        "n_malicious_attacked": 8,
+        "clean_detected": 8,
+        "already_missed_before_attack": 0,
+        "returned_candidates_valid_and_in_budget": 8,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 1.0,
+        "clean_recall_on_same_subset": 1.0,
+        "upstream_one_minus_mdc_on_malicious_subset": 1.0,
+        "attack_wall_seconds": 5.844935045000057,
+        "max_returned_scaled_l2_distance": 0.0
+      }
+    }
+  },
+  "dataset": {
+    "rows_total": 198128,
+    "features": 757,
+    "native_test_start_row_zero_based": 143046,
+    "test_rows": 55082,
+    "test_benign": 54675,
+    "test_malicious": 407,
+    "includes_window_timestamp": true
+  },
+  "selection": {
+    "malicious_total": 407,
+    "constraint_valid_malicious": 407,
+    "excluded_malicious": 0,
+    "selected": 8,
+    "selection_seed": 0,
+    "filter_correct": false,
+    "global_csv_row_indices_zero_based": [
+      158426,
+      165200,
+      166566,
+      176747,
+      177068,
+      177775,
+      181015,
+      185181
+    ]
+  },
+  "run_wall_seconds": 27.734547740999915,
+  "main_process_peak_rss_kib_linux": 4893228
+}

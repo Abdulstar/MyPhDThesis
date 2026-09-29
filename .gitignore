@@ -1,0 +1,13 @@
+.baseline-env/
+.tools/
+.cache/
+vendor/
+assets/
+runs/
+exports/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example

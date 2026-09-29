@@ -1,0 +1,8 @@
+{
+  "ctu_13_neris.csv": "37a8a8502183f1f2681b429a8f2ba6d1c1e36c75aa7ef463255275a79bd07575",
+  "ctu_13_neris_metadata.csv": "9a5c23f52d1be7ce9988da82a42508069a29c94dbceea37658cb2612ddd5175c",
+  "torchrln_ctu_13_neris_default.model/args.json": "378331d786f718ba2cb94d71040654886c87934a195d5b96ab2c24afc58688e3",
+  "torchrln_ctu_13_neris_default.model/weights.pt": "d00da19ee2305fe28b41b14571e366896006d9db150f78a36b610b9a3a74e02b",
+  "torchrln_ctu_13_neris_madry.model/args.json": "50456de9f9a80bc93a4a474c25204c60c74184642f63a65aa154d954bc443870",
+  "torchrln_ctu_13_neris_madry.model/weights.pt": "4f168d05d0f7b700973f790372415b35f1e69d68149a28d32709dda3e2b6890e"
+}
