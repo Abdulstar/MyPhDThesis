@@ -1,0 +1,56 @@
+{
+  "archive": "pilot32_20260929T060849Z_2174bc2f_results_20260929T061041Z_a44172fa.zip",
+  "archive_sha256": "1212260b368401c1d6e1533e551b93264f251eb005b508de2785898d17029e50",
+  "archive_integrity": "passed",
+  "project_commit": "0ad9419bec662ad2c144a040c525d1f7287a0aa0",
+  "working_tree_clean": true,
+  "source_snapshot_files_verified_against_commit": [
+    "baseline/requirements-repro.txt",
+    "baseline/run_baseline.py",
+    "baseline/download_assets.py",
+    "baseline/asset_hashes.json",
+    "baseline/metrics.py",
+    "scripts/summarize_results.py",
+    "scripts/bootstrap.py",
+    "notebooks/02_Robustness_Pilot_32.ipynb"
+  ],
+  "reported_asset_hashes_match_pins": true,
+  "actual_assets_not_embedded_in_archive": true,
+  "same_paired_subset": true,
+  "selection_seed_verified": true,
+  "log_errors_detected": [],
+  "models": {
+    "default": {
+      "confusion_counts_recomputed": {
+        "tn": 54587,
+        "fp": 88,
+        "fn": 9,
+        "tp": 398
+      },
+      "source_predictions_and_attack_arrays_consistent": true,
+      "positive_auroc_recomputed": 0.9930477503317009,
+      "average_precision_recomputed": 0.9606281970860305,
+      "returned_changed_rows": 0,
+      "new_evasions": 0,
+      "initially_detected": 32,
+      "attack_wall_seconds": 24.202281073999984
+    },
+    "madry": {
+      "confusion_counts_recomputed": {
+        "tn": 54633,
+        "fp": 42,
+        "fn": 11,
+        "tp": 396
+      },
+      "source_predictions_and_attack_arrays_consistent": true,
+      "positive_auroc_recomputed": 0.9932332557023915,
+      "average_precision_recomputed": 0.9668451652117206,
+      "returned_changed_rows": 0,
+      "new_evasions": 0,
+      "initially_detected": 32,
+      "attack_wall_seconds": 21.609976942999992
+    }
+  },
+  "full_run_seconds": 67.44205368999997,
+  "main_process_peak_rss_gib": 4.631191253662109
+}

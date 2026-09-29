@@ -1,0 +1,1061 @@
+{
+  "validated_at_utc": "2026-09-29T09:36:32.336262+00:00",
+  "notebook": "notebooks/03_Attack_Diagnostics_32.ipynb",
+  "execution_mode": "Exact default code cells sequentially in one local Python 3.12 namespace; not hosted Colab",
+  "project_base_commit": "0ad9419bec662ad2c144a040c525d1f7287a0aa0",
+  "new_files_were_uncommitted_during_validation": true,
+  "source_sha256": {
+    "baseline/candidate_trace.py": "79cf83a05a4a9345249111422a5b0857e3bdb760a7f8bc1599604dccbcb87146",
+    "baseline/run_diagnostics.py": "829b85bb157f5afa2f64d0f79c57da8ab684a6edddc9508f7dfd39e69c55be4c",
+    "baseline/asset_hashes.json": "d1896297835d0896af58e30f90a868ea8b5d7dc284095c9c35e988a75c82a12c",
+    "baseline/run_baseline.py": "f3a7ab4eae2856fa523345402c970e800f476a438e4783b517fa6ebb59da6eb5",
+    "baseline/requirements-repro.txt": "eb58f4fc2d591243c6170aea4e7f9cdfa05a401a9b81736ba040961fcacecf71",
+    "baseline/metrics.py": "6ca2895712c075dac5035e9423015df8aab182793cd513480275b476c28f05bd",
+    "baseline/download_assets.py": "b46f0fa7331e2fb67415d88c1592617db470d014c45cce4e54b219473ffb2561",
+    "scripts/bootstrap.py": "c2abe7fa8a254e3a91d6e1cfac1dbb5d46bca1ebf3292c2c98fdfa91ca738ab3",
+    "scripts/summarize_results.py": "249df3b35bbb5487e2686fc17edb0365029897ee8714a406b2a389f14ee9615f",
+    "notebooks/03_Attack_Diagnostics_32.ipynb": "583e09f5fbc917229c09836abd01559114d0cd3b236dfdfc2d1d81460db63a45"
+  },
+  "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+  "torch": "1.12.1+cpu",
+  "device": "cpu",
+  "default_code_cells": [
+    {
+      "cell": 2,
+      "status": "passed",
+      "wall_seconds": 0.01
+    },
+    {
+      "cell": 4,
+      "status": "passed",
+      "wall_seconds": 0.569
+    },
+    {
+      "cell": 6,
+      "status": "passed",
+      "wall_seconds": 0.296
+    },
+    {
+      "cell": 8,
+      "status": "passed",
+      "wall_seconds": 242.131
+    },
+    {
+      "cell": 10,
+      "status": "passed",
+      "wall_seconds": 0.495
+    },
+    {
+      "cell": 12,
+      "status": "passed",
+      "wall_seconds": 0.26
+    }
+  ],
+  "notebook_wall_seconds": 243.762,
+  "setup_and_downloads_used_verified_cache": true,
+  "unit_tests_passed": 5,
+  "same_selected_rows_across_models_and_budgets": true,
+  "only_generation_count_changed": true,
+  "low_budget_returned_arrays_match_uploaded_pilot_exactly": true,
+  "numpy_and_torch_rng_preservation_checks_passed": true,
+  "final_outcomes_independently_recomputed_from_saved_scaler_models_and_arrays": [
+    {
+      "model": "default",
+      "generations": 10,
+      "initially_detected": 32,
+      "new_evasions": 0,
+      "returned_changed_rows": 0,
+      "evaded_csv_rows_zero_based": [],
+      "evaded_scaled_l2_distances": [],
+      "all_returned_candidates_valid": true,
+      "all_returned_candidates_in_budget": true
+    },
+    {
+      "model": "default",
+      "generations": 100,
+      "initially_detected": 32,
+      "new_evasions": 1,
+      "returned_changed_rows": 1,
+      "evaded_csv_rows_zero_based": [
+        152745
+      ],
+      "evaded_scaled_l2_distances": [
+        0.16659945249557495
+      ],
+      "all_returned_candidates_valid": true,
+      "all_returned_candidates_in_budget": true
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "initially_detected": 32,
+      "new_evasions": 0,
+      "returned_changed_rows": 0,
+      "evaded_csv_rows_zero_based": [],
+      "evaded_scaled_l2_distances": [],
+      "all_returned_candidates_valid": true,
+      "all_returned_candidates_in_budget": true
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "initially_detected": 32,
+      "new_evasions": 0,
+      "returned_changed_rows": 0,
+      "evaded_csv_rows_zero_based": [],
+      "evaded_scaled_l2_distances": [],
+      "all_returned_candidates_valid": true,
+      "all_returned_candidates_in_budget": true
+    }
+  ],
+  "stage_summaries": [
+    {
+      "model": "default",
+      "generations": 10,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 0,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 32,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 32
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 0.0,
+      "diagnostic_wall_seconds": 0.23548866500004806
+    },
+    {
+      "model": "default",
+      "generations": 10,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 1,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 31,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 31
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 1
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.1799575537443161,
+      "maximum_scaled_l2_distance": 0.46597540378570557,
+      "diagnostic_wall_seconds": 0.2585855459999493
+    },
+    {
+      "model": "default",
+      "generations": 10,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates_per_input": 206,
+      "candidates": 6592,
+      "changed_candidates": 119,
+      "changed_valid_in_budget": 4,
+      "fooled_candidates": 98,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 1,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 62,
+      "over_budget_candidates": 95,
+      "still_detected_candidates": 6494,
+      "constraint_failures_overlapping": {
+        "relation_ok": 62,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 2
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 40
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 15
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 5
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 53
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 6477
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 1469.177490234375,
+      "diagnostic_wall_seconds": 0.4942171760000065
+    },
+    {
+      "model": "default",
+      "generations": 100,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 0,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 32,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 32
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 0.0,
+      "diagnostic_wall_seconds": 0.2273665530000244
+    },
+    {
+      "model": "default",
+      "generations": 100,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 1,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 31,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 31
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 1
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.1799575537443161,
+      "maximum_scaled_l2_distance": 0.46597540378570557,
+      "diagnostic_wall_seconds": 0.24598828000000594
+    },
+    {
+      "model": "default",
+      "generations": 100,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates_per_input": 206,
+      "candidates": 6592,
+      "changed_candidates": 3437,
+      "changed_valid_in_budget": 56,
+      "fooled_candidates": 3037,
+      "successful_candidates": 25,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 2,
+      "rows_with_successful_candidate": 1,
+      "selected_rows_by_CAA": 1,
+      "invalid_candidates": 2624,
+      "over_budget_candidates": 3268,
+      "still_detected_candidates": 3555,
+      "constraint_failures_overlapping": {
+        "relation_ok": 2624,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 253
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 2258
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 73
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 40
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 43
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 714
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 3186
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 25
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 289.03973388671875,
+      "diagnostic_wall_seconds": 0.5627116309999565
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 0,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 32,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 32
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 0.0,
+      "diagnostic_wall_seconds": 0.23180552199994509
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 32,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 32
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.1799575537443161,
+      "maximum_scaled_l2_distance": 0.22996777296066284,
+      "diagnostic_wall_seconds": 0.24421089999998458
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates_per_input": 206,
+      "candidates": 6592,
+      "changed_candidates": 123,
+      "changed_valid_in_budget": 4,
+      "fooled_candidates": 100,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 1,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 61,
+      "over_budget_candidates": 115,
+      "still_detected_candidates": 6492,
+      "constraint_failures_overlapping": {
+        "relation_ok": 61,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 15
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 42
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 4
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 58
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 6473
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 1489.4024658203125,
+      "diagnostic_wall_seconds": 0.48883533999992324
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 0,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 32,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 32
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 0.0,
+      "diagnostic_wall_seconds": 0.22858949800001938
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates_per_input": 1,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 0,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "still_detected_candidates": 32,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 32
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.1799575537443161,
+      "maximum_scaled_l2_distance": 0.22996777296066284,
+      "diagnostic_wall_seconds": 0.24820401500005573
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates_per_input": 206,
+      "candidates": 6592,
+      "changed_candidates": 4212,
+      "changed_valid_in_budget": 21,
+      "fooled_candidates": 3087,
+      "successful_candidates": 0,
+      "rows_with_changed_candidate": 32,
+      "rows_with_changed_valid_in_budget_candidate": 1,
+      "rows_with_successful_candidate": 0,
+      "selected_rows_by_CAA": 0,
+      "invalid_candidates": 3382,
+      "over_budget_candidates": 4183,
+      "still_detected_candidates": 3505,
+      "constraint_failures_overlapping": {
+        "relation_ok": 3382,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "disjoint_objective_buckets": [
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 966
+        },
+        {
+          "valid": false,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 2408
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 8
+        },
+        {
+          "valid": false,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": false,
+          "candidates": 130
+        },
+        {
+          "valid": true,
+          "in_budget": false,
+          "fooled": true,
+          "candidates": 679
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": false,
+          "candidates": 2401
+        },
+        {
+          "valid": true,
+          "in_budget": true,
+          "fooled": true,
+          "candidates": 0
+        }
+      ],
+      "minimum_scaled_l2_distance": 0.0,
+      "maximum_scaled_l2_distance": 646.1692504882812,
+      "diagnostic_wall_seconds": 0.5496473589998914
+    }
+  ],
+  "zip_integrity": "passed",
+  "zip_entries": 88,
+  "zip_bytes": 1908587,
+  "zip_sha256": "8ccc89f59f851fff49a0920a6b8f235746987c0e9c502ebe263056e88353fc4e",
+  "limitations": [
+    "Local sequential code-cell execution, not hosted Colab or a Jupyter kernel.",
+    "Browser download callback and optional Drive authorization were not exercised locally.",
+    "Attack times include diagnostic overhead.",
+    "No GPU used or tested.",
+    "The paired 32-record, one-seed comparison does not establish a general defense advantage."
+  ],
+  "local_environment_note": "Initial local environment had truncated h5py/matplotlib native binaries. Both packages were reinstalled at the same pinned versions before the successful complete run."
+}
