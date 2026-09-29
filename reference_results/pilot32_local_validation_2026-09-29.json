@@ -1,0 +1,181 @@
+{
+  "validated_at_utc": "2026-09-29T05:08:54.361012+00:00",
+  "notebook": "notebooks/02_Robustness_Pilot_32.ipynb",
+  "execution_mode": "Exact code cells sequentially in a single Python 3.12 namespace; local Linux CPU, not hosted Colab or a Jupyter kernel",
+  "project_base_commit": "1ad38b22790aecad981191a46ad9c53d6c4a08d2",
+  "new_notebook_was_uncommitted_during_validation": true,
+  "source_sha256": {
+    "baseline/run_baseline.py": "f3a7ab4eae2856fa523345402c970e800f476a438e4783b517fa6ebb59da6eb5",
+    "baseline/asset_hashes.json": "d1896297835d0896af58e30f90a868ea8b5d7dc284095c9c35e988a75c82a12c",
+    "baseline/download_assets.py": "b46f0fa7331e2fb67415d88c1592617db470d014c45cce4e54b219473ffb2561",
+    "baseline/metrics.py": "6ca2895712c075dac5035e9423015df8aab182793cd513480275b476c28f05bd",
+    "baseline/requirements-repro.txt": "eb58f4fc2d591243c6170aea4e7f9cdfa05a401a9b81736ba040961fcacecf71",
+    "scripts/bootstrap.py": "c2abe7fa8a254e3a91d6e1cfac1dbb5d46bca1ebf3292c2c98fdfa91ca738ab3",
+    "scripts/summarize_results.py": "249df3b35bbb5487e2686fc17edb0365029897ee8714a406b2a389f14ee9615f",
+    "notebooks/02_Robustness_Pilot_32.ipynb": "fa7c7f8712ae2279f72a6d5d911f7b6e625cbff5070d76867b14c8974052a87c"
+  },
+  "notebook_host_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "baseline_python": "3.8.20",
+  "torch": "1.12.1+cpu",
+  "device": "cpu",
+  "upstream_code_revision": "bfb75415a6a31a41ddfeef34478eea1da227d19c",
+  "data_revision": "49cb6c10f28d17d6e9b70ccac27a7cf6e8a563c8",
+  "model_revision": "b6f2ac4ee659505da75b7e517649379334c55ad0",
+  "cached_environment_and_assets_reused": true,
+  "default_code_cells": [
+    {
+      "cell_index": 2,
+      "status": "passed",
+      "wall_seconds": 0.016
+    },
+    {
+      "cell_index": 4,
+      "status": "passed",
+      "wall_seconds": 1.201
+    },
+    {
+      "cell_index": 6,
+      "status": "passed",
+      "wall_seconds": 1.26
+    },
+    {
+      "cell_index": 8,
+      "status": "passed",
+      "wall_seconds": 91.607
+    },
+    {
+      "cell_index": 10,
+      "status": "passed",
+      "wall_seconds": 0.71
+    },
+    {
+      "cell_index": 12,
+      "status": "passed",
+      "wall_seconds": 0.142
+    }
+  ],
+  "total_notebook_wall_seconds": 94.936,
+  "settings": {
+    "models": [
+      "default",
+      "madry"
+    ],
+    "attack": true,
+    "n_attack": 32,
+    "steps": 10,
+    "generations": 10,
+    "offspring": 50,
+    "eps": 0.5,
+    "seed": 0
+  },
+  "clean_reference_checks": {
+    "default": {
+      "actual_tn_fp_fn_tp": [
+        54587,
+        88,
+        9,
+        398
+      ],
+      "expected_tn_fp_fn_tp": [
+        54587,
+        88,
+        9,
+        398
+      ],
+      "matches": true
+    },
+    "madry": {
+      "actual_tn_fp_fn_tp": [
+        54633,
+        42,
+        11,
+        396
+      ],
+      "expected_tn_fp_fn_tp": [
+        54633,
+        42,
+        11,
+        396
+      ],
+      "matches": true
+    }
+  },
+  "same_selected_rows_for_both_models": true,
+  "selected_csv_rows_zero_based": [
+    152745,
+    153047,
+    158426,
+    159139,
+    161923,
+    163220,
+    165200,
+    166254,
+    166566,
+    167098,
+    167215,
+    167340,
+    167549,
+    171149,
+    175846,
+    176266,
+    176747,
+    177068,
+    177775,
+    180829,
+    181015,
+    184763,
+    185181,
+    187260,
+    187815,
+    188138,
+    188246,
+    189692,
+    190488,
+    190705,
+    192501,
+    196630
+  ],
+  "attack": {
+    "default": {
+      "n_malicious_attacked": 32,
+      "clean_detected": 32,
+      "already_missed_before_attack": 0,
+      "returned_candidates_valid_and_in_budget": 32,
+      "newly_evaded": 0,
+      "new_evasion_rate_among_initially_detected": 0.0,
+      "malicious_recall_after_attack": 1.0,
+      "clean_recall_on_same_subset": 1.0,
+      "upstream_one_minus_mdc_on_malicious_subset": 1.0,
+      "attack_wall_seconds": 21.467073211999377,
+      "max_returned_scaled_l2_distance": 0.0
+    },
+    "madry": {
+      "n_malicious_attacked": 32,
+      "clean_detected": 32,
+      "already_missed_before_attack": 0,
+      "returned_candidates_valid_and_in_budget": 32,
+      "newly_evaded": 0,
+      "new_evasion_rate_among_initially_detected": 0.0,
+      "malicious_recall_after_attack": 1.0,
+      "clean_recall_on_same_subset": 1.0,
+      "upstream_one_minus_mdc_on_malicious_subset": 1.0,
+      "attack_wall_seconds": 16.22687250099989,
+      "max_returned_scaled_l2_distance": 0.0
+    }
+  },
+  "returned_changed_rows": {
+    "default": 0,
+    "madry": 0
+  },
+  "run_wall_seconds": 88.55567302600048,
+  "main_process_peak_rss_kib_linux": 4844992,
+  "zip_integrity_check": "passed",
+  "zip_entries": 35,
+  "zip_sha256": "9a463de5d52c4fe563b6c984a8799289509d72c937db2e5494f7886a029dd939",
+  "limits": [
+    "Notebook code cells executed locally in one Python namespace; not a hosted Colab or Jupyter-kernel execution.",
+    "Colab-specific download and optional Drive authorization not exercised locally.",
+    "No GPU was available; no GPU compatibility or speedup measurement.",
+    "Zero new evasions and unchanged returned inputs do not establish robustness."
+  ]
+}
