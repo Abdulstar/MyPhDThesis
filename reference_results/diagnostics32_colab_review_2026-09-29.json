@@ -1,0 +1,519 @@
+{
+  "archive": "diagnostics32_20260929T132256Z_f142b528_results_20260929T133337Z_79f17a41.zip",
+  "archive_sha256": "7d5ab5c586585a61c3267d37792bf12f7dc2fc0ccd6be857cabd57e5961c618f",
+  "archive_integrity_passed": true,
+  "project_commit": "cae62372e7805160a2e9c7a593734c210773df4c",
+  "working_tree_clean": true,
+  "source_snapshot_files_verified_against_git_and_local_validation": [
+    "baseline/requirements-repro.txt",
+    "baseline/candidate_trace.py",
+    "baseline/run_baseline.py",
+    "baseline/download_assets.py",
+    "baseline/run_diagnostics.py",
+    "baseline/asset_hashes.json",
+    "baseline/metrics.py",
+    "scripts/summarize_results.py",
+    "scripts/bootstrap.py",
+    "notebooks/03_Attack_Diagnostics_32.ipynb"
+  ],
+  "reported_asset_hashes_match_pins": true,
+  "source_assets_and_checkpoints_not_embedded": true,
+  "same_subset_and_scaler_across_budgets": true,
+  "selection_seed_reproduced": true,
+  "full_clean_confusion_matrices_auroc_and_ap_recomputed": true,
+  "all_12_candidate_stage_summaries_recomputed_from_saved_arrays": true,
+  "scaled_distances_recomputed_using_pinned_scaler_formula": true,
+  "saved_constraint_masks_checked_for_consistency": true,
+  "final_arrays_reconstructed_from_selected_stage_candidates": true,
+  "log_errors": [],
+  "final_outcomes_match_local_validation": true,
+  "bitwise_attack_search_reproduction": false,
+  "candidate_search_differences": [
+    {
+      "model": "default",
+      "generations": 100,
+      "stage": "Moeva2",
+      "differences": {
+        "changed_candidates": {
+          "local": 3437,
+          "colab": 3745
+        },
+        "changed_valid_in_budget": {
+          "local": 56,
+          "colab": 43
+        },
+        "fooled_candidates": {
+          "local": 3037,
+          "colab": 3294
+        },
+        "successful_candidates": {
+          "local": 25,
+          "colab": 11
+        },
+        "invalid_candidates": {
+          "local": 2624,
+          "colab": 2985
+        },
+        "over_budget_candidates": {
+          "local": 3268,
+          "colab": 3587
+        }
+      }
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "stage": "Moeva2",
+      "differences": {
+        "changed_candidates": {
+          "local": 4212,
+          "colab": 4817
+        },
+        "changed_valid_in_budget": {
+          "local": 21,
+          "colab": 52
+        },
+        "fooled_candidates": {
+          "local": 3087,
+          "colab": 3646
+        },
+        "invalid_candidates": {
+          "local": 3382,
+          "colab": 4014
+        },
+        "over_budget_candidates": {
+          "local": 4183,
+          "colab": 4739
+        }
+      }
+    },
+    {
+      "model": "default",
+      "generations": 10,
+      "stage": "Moeva2",
+      "differences": {
+        "changed_candidates": {
+          "local": 119,
+          "colab": 118
+        },
+        "fooled_candidates": {
+          "local": 98,
+          "colab": 97
+        },
+        "invalid_candidates": {
+          "local": 62,
+          "colab": 63
+        },
+        "over_budget_candidates": {
+          "local": 95,
+          "colab": 94
+        }
+      }
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "stage": "Moeva2",
+      "differences": {
+        "changed_candidates": {
+          "local": 123,
+          "colab": 124
+        },
+        "fooled_candidates": {
+          "local": 100,
+          "colab": 101
+        },
+        "invalid_candidates": {
+          "local": 61,
+          "colab": 62
+        },
+        "over_budget_candidates": {
+          "local": 115,
+          "colab": 116
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "generations": 100,
+      "model": "default",
+      "clean_confusion": {
+        "tn": 54587,
+        "fp": 88,
+        "fn": 9,
+        "tp": 398
+      },
+      "initially_detected": 32,
+      "new_evasions": 1,
+      "new_evasion_rate": 0.03125,
+      "attack_subset_recall": 0.96875,
+      "returned_changed_rows": 1,
+      "evaded_csv_rows_zero_based": [
+        152745
+      ],
+      "maximum_scaled_l2_recomputed": 0.15825259685516357,
+      "maximum_scaled_l2_local_run": 0.16659945249557495,
+      "attack_seconds_with_diagnostics": 207.97363264199998
+    },
+    {
+      "generations": 100,
+      "model": "madry",
+      "clean_confusion": {
+        "tn": 54633,
+        "fp": 42,
+        "fn": 11,
+        "tp": 396
+      },
+      "initially_detected": 32,
+      "new_evasions": 0,
+      "new_evasion_rate": 0.0,
+      "attack_subset_recall": 1.0,
+      "returned_changed_rows": 0,
+      "evaded_csv_rows_zero_based": [],
+      "maximum_scaled_l2_recomputed": 0.0,
+      "maximum_scaled_l2_local_run": 0,
+      "attack_seconds_with_diagnostics": 206.76839921700002
+    },
+    {
+      "generations": 10,
+      "model": "default",
+      "clean_confusion": {
+        "tn": 54587,
+        "fp": 88,
+        "fn": 9,
+        "tp": 398
+      },
+      "initially_detected": 32,
+      "new_evasions": 0,
+      "new_evasion_rate": 0.0,
+      "attack_subset_recall": 1.0,
+      "returned_changed_rows": 0,
+      "evaded_csv_rows_zero_based": [],
+      "maximum_scaled_l2_recomputed": 0.0,
+      "maximum_scaled_l2_local_run": 0,
+      "attack_seconds_with_diagnostics": 39.48705931999996
+    },
+    {
+      "generations": 10,
+      "model": "madry",
+      "clean_confusion": {
+        "tn": 54633,
+        "fp": 42,
+        "fn": 11,
+        "tp": 396
+      },
+      "initially_detected": 32,
+      "new_evasions": 0,
+      "new_evasion_rate": 0.0,
+      "attack_subset_recall": 1.0,
+      "returned_changed_rows": 0,
+      "evaded_csv_rows_zero_based": [],
+      "maximum_scaled_l2_recomputed": 0.0,
+      "maximum_scaled_l2_local_run": 0,
+      "attack_seconds_with_diagnostics": 32.37549810299993
+    }
+  ],
+  "stages": [
+    {
+      "model": "default",
+      "generations": 100,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "default",
+      "generations": 100,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 1,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "default",
+      "generations": 100,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates": 6592,
+      "changed_candidates": 3745,
+      "changed_valid_in_budget": 43,
+      "fooled_candidates": 3294,
+      "successful_candidates": 11,
+      "rows_with_successful_candidate": 1,
+      "invalid_candidates": 2985,
+      "over_budget_candidates": 3587,
+      "constraint_failures_overlapping": {
+        "relation_ok": 2985,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 2
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "madry",
+      "generations": 100,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates": 6592,
+      "changed_candidates": 4817,
+      "changed_valid_in_budget": 52,
+      "fooled_candidates": 3646,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 4014,
+      "over_budget_candidates": 4739,
+      "constraint_failures_overlapping": {
+        "relation_ok": 4014,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 1
+    },
+    {
+      "model": "default",
+      "generations": 10,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "default",
+      "generations": 10,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 1,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "default",
+      "generations": 10,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates": 6592,
+      "changed_candidates": 118,
+      "changed_valid_in_budget": 4,
+      "fooled_candidates": 97,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 63,
+      "over_budget_candidates": 94,
+      "constraint_failures_overlapping": {
+        "relation_ok": 63,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 1
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "stage": "NoAttack",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 0,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 0,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 0,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "stage": "CAPGD",
+      "inputs": 32,
+      "candidates": 32,
+      "changed_candidates": 32,
+      "changed_valid_in_budget": 0,
+      "fooled_candidates": 0,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 32,
+      "over_budget_candidates": 0,
+      "constraint_failures_overlapping": {
+        "relation_ok": 32,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 0
+    },
+    {
+      "model": "madry",
+      "generations": 10,
+      "stage": "Moeva2",
+      "inputs": 32,
+      "candidates": 6592,
+      "changed_candidates": 124,
+      "changed_valid_in_budget": 4,
+      "fooled_candidates": 101,
+      "successful_candidates": 0,
+      "rows_with_successful_candidate": 0,
+      "invalid_candidates": 62,
+      "over_budget_candidates": 116,
+      "constraint_failures_overlapping": {
+        "relation_ok": 62,
+        "bounds_ok": 0,
+        "types_ok": 0,
+        "immutable_ok": 0
+      },
+      "rows_with_changed_valid_in_budget_candidate": 1
+    }
+  ],
+  "limits": [
+    "Model predictions and feature-constraint rules were not independently rerun against checkpoint/metadata assets in this review; saved prediction and constraint outputs were checked for consistency.",
+    "No claim of live-traffic realizability or general defense superiority follows from one paired subset and seed.",
+    "Different intermediate candidates and the changed successful perturbation mean this is not bitwise reproduction; the cause has not been isolated."
+  ],
+  "feasible_changed_output_coverage": [
+    {
+      "generations": 10,
+      "model": "default",
+      "covered_records": 1,
+      "out_of_records": 32,
+      "csv_rows_zero_based": [
+        152745
+      ],
+      "scope": "Returned stage candidates only, not every internal optimizer iteration."
+    },
+    {
+      "generations": 10,
+      "model": "madry",
+      "covered_records": 1,
+      "out_of_records": 32,
+      "csv_rows_zero_based": [
+        152745
+      ],
+      "scope": "Returned stage candidates only, not every internal optimizer iteration."
+    },
+    {
+      "generations": 100,
+      "model": "default",
+      "covered_records": 2,
+      "out_of_records": 32,
+      "csv_rows_zero_based": [
+        152745,
+        187815
+      ],
+      "scope": "Returned stage candidates only, not every internal optimizer iteration."
+    },
+    {
+      "generations": 100,
+      "model": "madry",
+      "covered_records": 1,
+      "out_of_records": 32,
+      "csv_rows_zero_based": [
+        152745
+      ],
+      "scope": "Returned stage candidates only, not every internal optimizer iteration."
+    }
+  ]
+}
