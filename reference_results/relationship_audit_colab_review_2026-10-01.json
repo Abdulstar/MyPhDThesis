@@ -1,0 +1,237 @@
+{
+  "review_date_utc": "2026-10-01",
+  "archive": "relationship_audit_20261001T075804Z_ca471628_results_20261001T080054Z_4b741113.zip",
+  "archive_sha256": "a51218cfd825b98132033a1b02973fe313873026e6f4ac4e197899570ce48a83",
+  "archive_bytes": 2594470,
+  "archive_entries": 89,
+  "outer_and_embedded_zip_integrity_passed": true,
+  "project_commit": "0abbc95505c38519e566b37d0328bf835c43ebe5",
+  "project_working_tree_clean": true,
+  "source_snapshots_verified_against_published_git": [
+    "baseline/relationship_audit.py",
+    "baseline/download_assets.py",
+    "baseline/run_baseline.py",
+    "baseline/asset_hashes.json",
+    "baseline/candidate_trace.py",
+    "baseline/requirements-repro.txt",
+    "baseline/run_diagnostics.py",
+    "baseline/metrics.py",
+    "scripts/bootstrap.py",
+    "scripts/summarize_results.py",
+    "tests/test_relationship_audit.py",
+    "tests/test_candidate_trace.py",
+    "tests/test_metrics.py",
+    "notebooks/04_Relationship_Audit.ipynb"
+  ],
+  "embedded_source_experiment_sha256": "7d5ab5c586585a61c3267d37792bf12f7dc2fc0ccd6be857cabd57e5961c618f",
+  "embedded_source_experiment_matches_notebook03_upload": true,
+  "metadata_sha256_verified": "9a5c23f52d1be7ce9988da82a42508069a29c94dbceea37658cb2612ddd5175c",
+  "upstream_source_hashes_match_reference": true,
+  "colab_notebook_python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "audit_python": "3.8.20",
+  "audit_numpy": "1.23.5",
+  "nine_unit_tests_passed_in_uploaded_log": true,
+  "log_errors": [],
+  "report_matches_reference_except_wall_time": true,
+  "colab_audit_wall_seconds": 107.89391448500004,
+  "reference_audit_wall_seconds": 81.35762740399991,
+  "review_numeric_engine": "Independent direct NumPy expressions; no code from either archive executed",
+  "review_numpy": "2.3.5",
+  "native_and_float64_residual_values_match_exactly": true,
+  "candidate_csv_records_verified": 26624,
+  "rule_summary_rows_verified": 4320,
+  "family_summary_rows_verified": 60,
+  "examples_verified": 1500,
+  "aggregate": {
+    "candidates": 26624,
+    "native_invalid": 7252,
+    "float64_invalid": 7252,
+    "native_invalid_but_float64_valid": 0,
+    "native_valid_but_float64_invalid": 0,
+    "failed_rule_pairs_cleared_in_float64": 0,
+    "new_failed_rule_pairs_in_float64": 0
+  },
+  "stages": [
+    {
+      "generations": 100,
+      "model": "default",
+      "stage": "NoAttack",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 100,
+      "model": "default",
+      "stage": "CAPGD",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 100,
+      "model": "default",
+      "stage": "Moeva2",
+      "candidate_count": 6592,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 100,
+      "model": "madry",
+      "stage": "NoAttack",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 100,
+      "model": "madry",
+      "stage": "CAPGD",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 100,
+      "model": "madry",
+      "stage": "Moeva2",
+      "candidate_count": 6592,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 10,
+      "model": "default",
+      "stage": "NoAttack",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 10,
+      "model": "default",
+      "stage": "CAPGD",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 10,
+      "model": "default",
+      "stage": "Moeva2",
+      "candidate_count": 6592,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 10,
+      "model": "madry",
+      "stage": "NoAttack",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 10,
+      "model": "madry",
+      "stage": "CAPGD",
+      "candidate_count": 32,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    },
+    {
+      "generations": 10,
+      "model": "madry",
+      "stage": "Moeva2",
+      "candidate_count": 6592,
+      "native_and_float64_residual_values_match_exactly": true,
+      "all_constraint_masks_recomputed": true,
+      "all_summary_tables_recomputed": true
+    }
+  ],
+  "coverage": [
+    {
+      "generations": 100,
+      "model": "default",
+      "changed_valid_in_budget": 43,
+      "covered_original_rows": [
+        152745,
+        187815
+      ],
+      "saved_successful_candidates": 11
+    },
+    {
+      "generations": 100,
+      "model": "madry",
+      "changed_valid_in_budget": 52,
+      "covered_original_rows": [
+        152745
+      ],
+      "saved_successful_candidates": 0
+    },
+    {
+      "generations": 10,
+      "model": "default",
+      "changed_valid_in_budget": 4,
+      "covered_original_rows": [
+        152745
+      ],
+      "saved_successful_candidates": 0
+    },
+    {
+      "generations": 10,
+      "model": "madry",
+      "changed_valid_in_budget": 4,
+      "covered_original_rows": [
+        152745
+      ],
+      "saved_successful_candidates": 0
+    }
+  ],
+  "reported_original_outcomes": [
+    {
+      "source_run": "diagnostics32_g100_20260929T132554Z_eac07709",
+      "generations": 100,
+      "model": "default",
+      "reported_new_evasions": 1
+    },
+    {
+      "source_run": "diagnostics32_g100_20260929T132554Z_eac07709",
+      "generations": 100,
+      "model": "madry",
+      "reported_new_evasions": 0
+    },
+    {
+      "source_run": "diagnostics32_g10_20260929T132347Z_2d8327bb",
+      "generations": 10,
+      "model": "default",
+      "reported_new_evasions": 0
+    },
+    {
+      "source_run": "diagnostics32_g10_20260929T132347Z_2d8327bb",
+      "generations": 10,
+      "model": "madry",
+      "reported_new_evasions": 0
+    }
+  ],
+  "limits": [
+    "This is reproduction of an audit on the same saved experiment, not a new attack run or independent seed.",
+    "Counts include unchanged and repeated candidates; 26624 candidates are not 26624 independent network requests.",
+    "Float64 reevaluates stored float32 features; it does not reconstruct values before rounding or repair features.",
+    "Models were not rerun; source predictions and distances were reused, while rule residuals and constraint masks were independently recomputed.",
+    "A method for improving candidate generation has not been implemented or evaluated by this upload.",
+    "The existing inspected test subset is exploratory; develop future methods on a separate development split."
+  ]
+}
