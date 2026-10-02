@@ -1,0 +1,3423 @@
+{
+  "review_date_utc": "2026-10-02",
+  "status": "completed_colab_archive_review",
+  "archive_filename": "development_repair_20261002T042520Z_3f469117_results_20261002T044827Z_690324d6.zip",
+  "archive_checks": {
+    "archive_sha256": "25ef47869bc744a709c679ce32a33156d14a0759e68df13b171f126322309a32",
+    "archive_bytes": 2946192,
+    "archive_entries": 251,
+    "archive_uncompressed_bytes": 7771663,
+    "archive_crc_valid": true,
+    "source_snapshots_match_published_commit": 18,
+    "project_commit": "395709672500e00e636382871c118a1a15dff2b6",
+    "protocol_matches_local_defaults": true,
+    "split_manifest_identical": true,
+    "installed_package_differences": [],
+    "archive_manifest_matches_pinned_assets": true,
+    "local_recheck_asset_hashes_verified": 6,
+    "local_constraint_engine_pinned_and_clean": true,
+    "colab_setup_tests_passed": 16
+  },
+  "source_sha256": {
+    "baseline/run_development_repair.py": "2885a95f61c9999a86f09adf167822e0f212fab8ba9028bba78ec147b2bf2a42",
+    "baseline/candidate_trace.py": "79cf83a05a4a9345249111422a5b0857e3bdb760a7f8bc1599604dccbcb87146",
+    "baseline/consistency_repair.py": "1b8695ca296c7f6ff5add9de94e07669df8f365664a874bb286f5404e6539cfb",
+    "baseline/asset_hashes.json": "d1896297835d0896af58e30f90a868ea8b5d7dc284095c9c35e988a75c82a12c",
+    "baseline/metrics.py": "6ca2895712c075dac5035e9423015df8aab182793cd513480275b476c28f05bd",
+    "baseline/run_diagnostics.py": "829b85bb157f5afa2f64d0f79c57da8ab684a6edddc9508f7dfd39e69c55be4c",
+    "baseline/requirements-repro.txt": "eb58f4fc2d591243c6170aea4e7f9cdfa05a401a9b81736ba040961fcacecf71",
+    "baseline/download_assets.py": "b46f0fa7331e2fb67415d88c1592617db470d014c45cce4e54b219473ffb2561",
+    "baseline/relationship_audit.py": "91c2fa71f1167af1fcc7be6fe13d6c3a676ee3af4d39ae1f6e5f112ef877263d",
+    "baseline/run_baseline.py": "f3a7ab4eae2856fa523345402c970e800f476a438e4783b517fa6ebb59da6eb5",
+    "scripts/bootstrap.py": "c2abe7fa8a254e3a91d6e1cfac1dbb5d46bca1ebf3292c2c98fdfa91ca738ab3",
+    "scripts/summarize_results.py": "249df3b35bbb5487e2686fc17edb0365029897ee8714a406b2a389f14ee9615f",
+    "tests/test_consistency_repair.py": "272f60cdd5e6a7b10bfe3184f07de8d16762bd5b71e9a013cd585ca422ab971e",
+    "tests/test_candidate_trace.py": "504edff6635ea7c7d8e86e1a3e416767ca167a11117fcde9c4bc868f8907533e",
+    "tests/test_relationship_audit.py": "02c5381ce428a00e95f49efaa8d2cf964586a03865d0af892542981c89287b37",
+    "tests/test_metrics.py": "993fe94f38a81b8b6cf8b4be97bb53614d90298c1f1af0292f125d83d07dc811",
+    "notebooks/05_Development_Consistency_Repair.ipynb": "72fb6ef4805ddd08516db7d4a5c85e84c40a4d2aa8b39076facdde6e587da06b",
+    "docs/DEVELOPMENT_REPAIR_GUIDE.md": "164a3aecd5de085564993e639a20e12ad02addb6219df7ffbc3886ad0f090639"
+  },
+  "saved_evidence_verification": {
+    "status": "passed",
+    "scope": "Colab arrays checked with pinned local engine; exact masks and class decisions; probability differences recorded without requiring bitwise equality; no new attacks",
+    "counts": {
+      "raw_stage_files": 18,
+      "repaired_stage_files": 36,
+      "raw_candidates": 34968,
+      "repaired_candidates": 69936,
+      "final_vectors_rescored": 576,
+      "changed_feasible_unique_vectors_rescored": 7656
+    },
+    "probability_rescoring_comparison": {
+      "compared_candidate_entries": 15481,
+      "nonidentical_probability_entries": 211,
+      "max_absolute_difference": 1.7881393432617188e-07,
+      "class_predictions_required_exact": true,
+      "constraint_and_budget_decisions_required_exact": true
+    },
+    "checks": [
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "original",
+        "covered": 2,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "budget_only",
+        "covered": 26,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "relation_and_budget",
+        "covered": 28,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "original",
+        "covered": 3,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "budget_only",
+        "covered": 27,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "relation_and_budget",
+        "covered": 28,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "original",
+        "covered": 4,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "budget_only",
+        "covered": 28,
+        "newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "relation_and_budget",
+        "covered": 28,
+        "newly_evaded": 1
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "original",
+        "covered": 1,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "budget_only",
+        "covered": 28,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "relation_and_budget",
+        "covered": 28,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "original",
+        "covered": 1,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "budget_only",
+        "covered": 28,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "relation_and_budget",
+        "covered": 28,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "original",
+        "covered": 2,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "budget_only",
+        "covered": 28,
+        "newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "relation_and_budget",
+        "covered": 28,
+        "newly_evaded": 0
+      }
+    ],
+    "wall_seconds": 15.827343621000011
+  },
+  "audit_script_sha256": "2300f41762c71153519b5ade612326996569b61394a868b173907f65c00bc817",
+  "cross_environment_comparison": {
+    "selected_inputs_identical": true,
+    "development_indices_identical": true,
+    "scaler_identical": true,
+    "seed_summaries_recomputed": true,
+    "raw_stage_array_comparison": [
+      {
+        "model": "default",
+        "seed": 0,
+        "stage_file": "00_NoAttack_candidates.npz",
+        "identical_candidate_arrays": true
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "stage_file": "01_CAPGD_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "stage_file": "02_Moeva2_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "stage_file": "00_NoAttack_candidates.npz",
+        "identical_candidate_arrays": true
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "stage_file": "01_CAPGD_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "stage_file": "02_Moeva2_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "stage_file": "00_NoAttack_candidates.npz",
+        "identical_candidate_arrays": true
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "stage_file": "01_CAPGD_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "stage_file": "02_Moeva2_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "stage_file": "00_NoAttack_candidates.npz",
+        "identical_candidate_arrays": true
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "stage_file": "01_CAPGD_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "stage_file": "02_Moeva2_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "stage_file": "00_NoAttack_candidates.npz",
+        "identical_candidate_arrays": true
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "stage_file": "01_CAPGD_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "stage_file": "02_Moeva2_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "stage_file": "00_NoAttack_candidates.npz",
+        "identical_candidate_arrays": true
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "stage_file": "01_CAPGD_candidates.npz",
+        "identical_candidate_arrays": false
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "stage_file": "02_Moeva2_candidates.npz",
+        "identical_candidate_arrays": false
+      }
+    ]
+  },
+  "protocol": {
+    "experiment": "development_candidate_consistency_comparison",
+    "status": "completed",
+    "settings": {
+      "repo": "vendor/tabularbench",
+      "assets": "assets",
+      "out": "comparison_20261002T042626Z_d7d3df3d",
+      "n_dev": 32,
+      "selection_seed": 0,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "models": [
+        "default",
+        "madry"
+      ],
+      "steps": 10,
+      "generations": 100,
+      "offspring": 50,
+      "eps": 0.5
+    },
+    "code_revision": "bfb75415a6a31a41ddfeef34478eea1da227d19c",
+    "data_revision": "49cb6c10f28d17d6e9b70ccac27a7cf6e8a563c8",
+    "model_revision": "b6f2ac4ee659505da75b7e517649379334c55ad0",
+    "python": "3.8.20",
+    "numpy": "1.23.5",
+    "torch": "1.12.1+cpu",
+    "device": "cpu",
+    "relationship_tolerance": 0.0,
+    "attack_generation_shared_between_methods": true,
+    "repair_inside_optimizer": false,
+    "new_model_training": false,
+    "test_partition_evaluated": false,
+    "scaler_fitted_on_all_feature_rows_for_checkpoint_compatibility": true,
+    "equal_total_compute_claim": false,
+    "methods": [
+      "original",
+      "budget_only",
+      "relation_and_budget"
+    ],
+    "limitations": [
+      "Development pilot on a fixed selected subset; seed variation is not independent population uncertainty.",
+      "Original upstream validation rows are used; checkpoint training history is inherited, not retrained here.",
+      "The compatibility scaler uses all dataset feature rows. This is not a leakage-free final evaluation.",
+      "Repair only processes original CAA stage outputs, not every optimizer iteration, and does not guide search.",
+      "Both repaired methods retain original valid evasions; their additional computation and model forwards are reported.",
+      "A reverted clean input is not changed-valid coverage or a new evasion.",
+      "Feature-space benchmark validity does not establish packet realizability or attack-functionality preservation.",
+      "Block rollback is a simple repair baseline; no novelty, optimality or general defense advantage is asserted."
+    ],
+    "wall_seconds": 1306.9476027649998
+  },
+  "split_manifest": {
+    "splitter": "pinned Ctu13Splitter; validation from native training prefix",
+    "split_random_state": 1319,
+    "train_rows": 114436,
+    "development_rows": 28610,
+    "native_test_rows": 55082,
+    "development_malicious": 692,
+    "eligible_malicious": 692,
+    "selected": 32,
+    "selection_seed": 0,
+    "prediction_filter_used": false,
+    "selected_csv_rows_zero_based": [
+      30755,
+      51402,
+      53941,
+      54930,
+      55459,
+      58295,
+      58794,
+      74161,
+      99101,
+      105081,
+      108400,
+      111892,
+      116475,
+      117132,
+      118039,
+      122268,
+      122386,
+      123190,
+      126192,
+      127200,
+      129988,
+      131106,
+      131302,
+      131590,
+      132569,
+      133833,
+      134407,
+      137518,
+      137885,
+      138598,
+      138970,
+      139179
+    ],
+    "selected_rows_all_in_official_validation": true,
+    "selected_rows_disjoint_from_native_test": true,
+    "split_indices_sha256": {
+      "train": "06e950bedbb57915aca5500ce3253a696ddaa3c9535affbbbfaeaf805251bb8f",
+      "val": "ce3f7c15ec61c2c7ea35b73295ecaf5db59a391e2bbd4cde336b5cddc928602a",
+      "test": "0c5fb83f581f7b716b680dc57db11b3cb6db679aadd77cf6e38d9ceea3d074df"
+    }
+  },
+  "results": {
+    "status": "completed",
+    "clean_development": {
+      "default": {
+        "n": 28610,
+        "benign": 27918,
+        "malicious": 692,
+        "tn": 27806,
+        "fp": 112,
+        "fn": 36,
+        "tp": 656,
+        "accuracy": 0.9948269835721776,
+        "recall": 0.9479768786127167,
+        "false_positive_rate": 0.004011748692599756,
+        "precision": 0.8541666666666666,
+        "auroc_positive_class": 0.97695312386771,
+        "auroc_upstream_two_column_macro": 0.9738244448958076,
+        "average_precision": 0.9117262413860513,
+        "majority_class_accuracy": 0.9758126529185599
+      },
+      "madry": {
+        "n": 28610,
+        "benign": 27918,
+        "malicious": 692,
+        "tn": 27827,
+        "fp": 91,
+        "fn": 37,
+        "tp": 655,
+        "accuracy": 0.9955260398462076,
+        "recall": 0.9465317919075145,
+        "false_positive_rate": 0.003259545812737302,
+        "precision": 0.8780160857908847,
+        "auroc_positive_class": 0.9834246722544595,
+        "auroc_upstream_two_column_macro": 0.9778876189642085,
+        "average_precision": 0.9316547473326099,
+        "majority_class_accuracy": 0.9758126529185599
+      }
+    },
+    "runs": [
+      {
+        "model": "default",
+        "seed": 0,
+        "results": "default/seed_0/results.json"
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "results": "default/seed_1/results.json"
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "results": "default/seed_2/results.json"
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "results": "madry/seed_0/results.json"
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "results": "madry/seed_1/results.json"
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "results": "madry/seed_2/results.json"
+      }
+    ],
+    "comparison": [
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "original",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2727,
+        "pool_unchanged_candidates": 3101,
+        "pool_invalid_candidates": 1882,
+        "pool_over_budget_candidates": 2516,
+        "pool_changed_valid_in_budget": 40,
+        "pool_successful_candidates": 37,
+        "method_pool_covered_records": 2,
+        "union_covered_records": 2,
+        "union_coverage_fraction": 0.0625,
+        "additional_covered_records": 0,
+        "initially_detected_covered_records_union": 2,
+        "unique_changed_feasible_candidates_union": 16,
+        "baseline_attack_seconds_with_trace": 203.19801021199987,
+        "added_wall_seconds": 0.0,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 0,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "budget_only",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 1923,
+        "pool_unchanged_candidates": 3905,
+        "pool_invalid_candidates": 1376,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 547,
+        "pool_successful_candidates": 38,
+        "method_pool_covered_records": 26,
+        "union_covered_records": 26,
+        "union_coverage_fraction": 0.8125,
+        "additional_covered_records": 24,
+        "initially_detected_covered_records_union": 26,
+        "unique_changed_feasible_candidates_union": 280,
+        "baseline_attack_seconds_with_trace": 203.19801021199987,
+        "added_wall_seconds": 2.7336065669999243,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 312,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "relation_and_budget",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 1599,
+        "pool_unchanged_candidates": 4229,
+        "pool_invalid_candidates": 0,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 1599,
+        "pool_successful_candidates": 104,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 26,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 693,
+        "baseline_attack_seconds_with_trace": 203.19801021199987,
+        "added_wall_seconds": 4.424638049999885,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 725,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "original",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2781,
+        "pool_unchanged_candidates": 3047,
+        "pool_invalid_candidates": 1840,
+        "pool_over_budget_candidates": 2546,
+        "pool_changed_valid_in_budget": 58,
+        "pool_successful_candidates": 42,
+        "method_pool_covered_records": 3,
+        "union_covered_records": 3,
+        "union_coverage_fraction": 0.09375,
+        "additional_covered_records": 0,
+        "initially_detected_covered_records_union": 3,
+        "unique_changed_feasible_candidates_union": 38,
+        "baseline_attack_seconds_with_trace": 196.47653546399988,
+        "added_wall_seconds": 0.0,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 0,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "budget_only",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 1866,
+        "pool_unchanged_candidates": 3962,
+        "pool_invalid_candidates": 1289,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 577,
+        "pool_successful_candidates": 42,
+        "method_pool_covered_records": 27,
+        "union_covered_records": 27,
+        "union_coverage_fraction": 0.84375,
+        "additional_covered_records": 24,
+        "initially_detected_covered_records_union": 27,
+        "unique_changed_feasible_candidates_union": 300,
+        "baseline_attack_seconds_with_trace": 196.47653546399988,
+        "added_wall_seconds": 4.223007027000222,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 332,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "relation_and_budget",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 1543,
+        "pool_unchanged_candidates": 4285,
+        "pool_invalid_candidates": 0,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 1543,
+        "pool_successful_candidates": 115,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 25,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 719,
+        "baseline_attack_seconds_with_trace": 196.47653546399988,
+        "added_wall_seconds": 4.4083682220000355,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 751,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "original",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 3276,
+        "pool_unchanged_candidates": 2552,
+        "pool_invalid_candidates": 2264,
+        "pool_over_budget_candidates": 3051,
+        "pool_changed_valid_in_budget": 36,
+        "pool_successful_candidates": 34,
+        "method_pool_covered_records": 4,
+        "union_covered_records": 4,
+        "union_coverage_fraction": 0.125,
+        "additional_covered_records": 0,
+        "initially_detected_covered_records_union": 4,
+        "unique_changed_feasible_candidates_union": 14,
+        "baseline_attack_seconds_with_trace": 206.44534170700013,
+        "added_wall_seconds": 0.0,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 0,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "budget_only",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2683,
+        "pool_unchanged_candidates": 3145,
+        "pool_invalid_candidates": 1940,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 743,
+        "pool_successful_candidates": 35,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 24,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 377,
+        "baseline_attack_seconds_with_trace": 206.44534170700013,
+        "added_wall_seconds": 3.6083103849996405,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 409,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "relation_and_budget",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 1,
+        "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+        "malicious_recall_after_attack": 0.84375,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2233,
+        "pool_unchanged_candidates": 3595,
+        "pool_invalid_candidates": 0,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 2233,
+        "pool_successful_candidates": 135,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 24,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 976,
+        "baseline_attack_seconds_with_trace": 206.44534170700013,
+        "added_wall_seconds": 4.572168875999978,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 1008,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "original",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 3297,
+        "pool_unchanged_candidates": 2531,
+        "pool_invalid_candidates": 2419,
+        "pool_over_budget_candidates": 3162,
+        "pool_changed_valid_in_budget": 13,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 1,
+        "union_covered_records": 1,
+        "union_coverage_fraction": 0.03125,
+        "additional_covered_records": 0,
+        "initially_detected_covered_records_union": 1,
+        "unique_changed_feasible_candidates_union": 11,
+        "baseline_attack_seconds_with_trace": 195.2460301189999,
+        "added_wall_seconds": 0.0,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 0,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "budget_only",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2338,
+        "pool_unchanged_candidates": 3490,
+        "pool_invalid_candidates": 1578,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 760,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 27,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 382,
+        "baseline_attack_seconds_with_trace": 195.2460301189999,
+        "added_wall_seconds": 3.973674028000005,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 414,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "relation_and_budget",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 1765,
+        "pool_unchanged_candidates": 4063,
+        "pool_invalid_candidates": 0,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 1765,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 27,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 865,
+        "baseline_attack_seconds_with_trace": 195.2460301189999,
+        "added_wall_seconds": 4.672227840000232,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 897,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "original",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 3628,
+        "pool_unchanged_candidates": 2200,
+        "pool_invalid_candidates": 2940,
+        "pool_over_budget_candidates": 3471,
+        "pool_changed_valid_in_budget": 26,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 1,
+        "union_covered_records": 1,
+        "union_coverage_fraction": 0.03125,
+        "additional_covered_records": 0,
+        "initially_detected_covered_records_union": 1,
+        "unique_changed_feasible_candidates_union": 23,
+        "baseline_attack_seconds_with_trace": 194.27120168300007,
+        "added_wall_seconds": 0.0,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 0,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "budget_only",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2723,
+        "pool_unchanged_candidates": 3105,
+        "pool_invalid_candidates": 2155,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 568,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 27,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 355,
+        "baseline_attack_seconds_with_trace": 194.27120168300007,
+        "added_wall_seconds": 2.7508343839999725,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 387,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "relation_and_budget",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2120,
+        "pool_unchanged_candidates": 3708,
+        "pool_invalid_candidates": 0,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 2120,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 27,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 1112,
+        "baseline_attack_seconds_with_trace": 194.27120168300007,
+        "added_wall_seconds": 6.176514144000066,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 1144,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "original",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 3612,
+        "pool_unchanged_candidates": 2216,
+        "pool_invalid_candidates": 2695,
+        "pool_over_budget_candidates": 3498,
+        "pool_changed_valid_in_budget": 23,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 2,
+        "union_covered_records": 2,
+        "union_coverage_fraction": 0.0625,
+        "additional_covered_records": 0,
+        "initially_detected_covered_records_union": 2,
+        "unique_changed_feasible_candidates_union": 16,
+        "baseline_attack_seconds_with_trace": 197.72818463400017,
+        "added_wall_seconds": 0.0,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 0,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "budget_only",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2791,
+        "pool_unchanged_candidates": 3037,
+        "pool_invalid_candidates": 2047,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 744,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 26,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 419,
+        "baseline_attack_seconds_with_trace": 197.72818463400017,
+        "added_wall_seconds": 2.714375199999722,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 451,
+        "final_selection_rejections": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "relation_and_budget",
+        "n_selected": 32,
+        "n_malicious_attacked": 32,
+        "clean_detected": 28,
+        "already_missed_before_attack": 4,
+        "returned_candidates_valid_and_in_budget": 32,
+        "newly_evaded": 0,
+        "new_evasion_rate_among_initially_detected": 0.0,
+        "malicious_recall_after_attack": 0.875,
+        "clean_recall_on_same_subset": 0.875,
+        "pool_candidates": 5828,
+        "pool_changed_candidates": 2282,
+        "pool_unchanged_candidates": 3546,
+        "pool_invalid_candidates": 0,
+        "pool_over_budget_candidates": 0,
+        "pool_changed_valid_in_budget": 2282,
+        "pool_successful_candidates": 4,
+        "method_pool_covered_records": 28,
+        "union_covered_records": 28,
+        "union_coverage_fraction": 0.875,
+        "additional_covered_records": 26,
+        "initially_detected_covered_records_union": 28,
+        "unique_changed_feasible_candidates_union": 1178,
+        "baseline_attack_seconds_with_trace": 197.72818463400017,
+        "added_wall_seconds": 6.143063314999836,
+        "baseline_attack_forward_rows": 150896,
+        "added_prediction_forward_rows": 1210,
+        "final_selection_rejections": 0
+      }
+    ],
+    "seed_summary": [
+      {
+        "model": "default",
+        "method": "budget_only",
+        "runs": 3,
+        "union_coverage_fraction_mean": 0.84375,
+        "union_coverage_fraction_sample_std": 0.03125,
+        "new_evasion_rate_among_initially_detected_mean": 0.03571428571428571,
+        "new_evasion_rate_among_initially_detected_sample_std": 0.0,
+        "newly_evaded_mean": 1,
+        "newly_evaded_sample_std": 0.0,
+        "added_wall_seconds_mean": 3.521641326333262,
+        "added_wall_seconds_sample_std": 0.7484731637539594
+      },
+      {
+        "model": "default",
+        "method": "original",
+        "runs": 3,
+        "union_coverage_fraction_mean": 0.09375,
+        "union_coverage_fraction_sample_std": 0.03125,
+        "new_evasion_rate_among_initially_detected_mean": 0.03571428571428571,
+        "new_evasion_rate_among_initially_detected_sample_std": 0.0,
+        "newly_evaded_mean": 1,
+        "newly_evaded_sample_std": 0.0,
+        "added_wall_seconds_mean": 0.0,
+        "added_wall_seconds_sample_std": 0.0
+      },
+      {
+        "model": "default",
+        "method": "relation_and_budget",
+        "runs": 3,
+        "union_coverage_fraction_mean": 0.875,
+        "union_coverage_fraction_sample_std": 0.0,
+        "new_evasion_rate_among_initially_detected_mean": 0.03571428571428571,
+        "new_evasion_rate_among_initially_detected_sample_std": 0.0,
+        "newly_evaded_mean": 1,
+        "newly_evaded_sample_std": 0.0,
+        "added_wall_seconds_mean": 4.468391715999966,
+        "added_wall_seconds_sample_std": 0.09024107174140389
+      },
+      {
+        "model": "madry",
+        "method": "budget_only",
+        "runs": 3,
+        "union_coverage_fraction_mean": 0.875,
+        "union_coverage_fraction_sample_std": 0.0,
+        "new_evasion_rate_among_initially_detected_mean": 0.0,
+        "new_evasion_rate_among_initially_detected_sample_std": 0.0,
+        "newly_evaded_mean": 0,
+        "newly_evaded_sample_std": 0.0,
+        "added_wall_seconds_mean": 3.146294537333233,
+        "added_wall_seconds_sample_std": 0.7167635134453315
+      },
+      {
+        "model": "madry",
+        "method": "original",
+        "runs": 3,
+        "union_coverage_fraction_mean": 0.041666666666666664,
+        "union_coverage_fraction_sample_std": 0.018042195912175804,
+        "new_evasion_rate_among_initially_detected_mean": 0.0,
+        "new_evasion_rate_among_initially_detected_sample_std": 0.0,
+        "newly_evaded_mean": 0,
+        "newly_evaded_sample_std": 0.0,
+        "added_wall_seconds_mean": 0.0,
+        "added_wall_seconds_sample_std": 0.0
+      },
+      {
+        "model": "madry",
+        "method": "relation_and_budget",
+        "runs": 3,
+        "union_coverage_fraction_mean": 0.875,
+        "union_coverage_fraction_sample_std": 0.0,
+        "new_evasion_rate_among_initially_detected_mean": 0.0,
+        "new_evasion_rate_among_initially_detected_sample_std": 0.0,
+        "newly_evaded_mean": 0,
+        "newly_evaded_sample_std": 0.0,
+        "added_wall_seconds_mean": 5.663935099666712,
+        "added_wall_seconds_sample_std": 0.8590065227613808
+      }
+    ]
+  },
+  "run_details": [
+    {
+      "model": "default",
+      "seed": 0,
+      "attack_seconds_with_trace": 203.19801021199987,
+      "attack_forward_counts": {
+        "forward_calls": 3139,
+        "forward_rows": 150896,
+        "grad_enabled_forward_calls": 23,
+        "grad_enabled_forward_rows": 644
+      },
+      "observer_rng_preservation_checked": true,
+      "upstream_selector_unchanged": true,
+      "methods": {
+        "original": {
+          "summary": {
+            "model": "default",
+            "seed": 0,
+            "method": "original",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2727,
+            "pool_unchanged_candidates": 3101,
+            "pool_invalid_candidates": 1882,
+            "pool_over_budget_candidates": 2516,
+            "pool_changed_valid_in_budget": 40,
+            "pool_successful_candidates": 37,
+            "method_pool_covered_records": 2,
+            "union_covered_records": 2,
+            "union_coverage_fraction": 0.0625,
+            "additional_covered_records": 0,
+            "initially_detected_covered_records_union": 2,
+            "unique_changed_feasible_candidates_union": 16,
+            "baseline_attack_seconds_with_trace": 203.19801021199987,
+            "added_wall_seconds": 0.0,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 0,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.0,
+            "constraint_and_distance_seconds": 0.0,
+            "prediction_seconds": 0.0,
+            "unique_changed_feasible_rows_scored": 0,
+            "postprocess_wall_seconds": 0.1057230899998558,
+            "forward_counts": {
+              "forward_calls": 0,
+              "forward_rows": 0,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0,
+          "final_gate_forward_counts": {
+            "forward_calls": 0,
+            "forward_rows": 0,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "7866f985f274c3f5a75eac7074ae1e0836babe5bcaebacd621619e0af2bf9b95",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2699,
+              "unchanged_candidates": 3069,
+              "invalid_candidates": 1854,
+              "over_budget_candidates": 2516,
+              "changed_valid_in_budget": 40,
+              "successful_candidates": 33,
+              "stage": "Moeva2",
+              "source_npz_sha256": "d1ad5d4d0c573c51e50c0cea83cb2d4633f7ce63fd496abab4e02b8d51883b5d",
+              "constraint_failures_overlapping": {
+                "relation_ok": 1854,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            }
+          ]
+        },
+        "budget_only": {
+          "summary": {
+            "model": "default",
+            "seed": 0,
+            "method": "budget_only",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 1923,
+            "pool_unchanged_candidates": 3905,
+            "pool_invalid_candidates": 1376,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 547,
+            "pool_successful_candidates": 38,
+            "method_pool_covered_records": 26,
+            "union_covered_records": 26,
+            "union_coverage_fraction": 0.8125,
+            "additional_covered_records": 24,
+            "initially_detected_covered_records_union": 26,
+            "unique_changed_feasible_candidates_union": 280,
+            "baseline_attack_seconds_with_trace": 203.19801021199987,
+            "added_wall_seconds": 2.7336065669999243,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 312,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.4514335280002797,
+            "constraint_and_distance_seconds": 1.661732726000082,
+            "prediction_seconds": 0.0652016970002478,
+            "unique_changed_feasible_rows_scored": 280,
+            "postprocess_wall_seconds": 2.69576561100007,
+            "forward_counts": {
+              "forward_calls": 1,
+              "forward_rows": 280,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.037840955999854486,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "7866f985f274c3f5a75eac7074ae1e0836babe5bcaebacd621619e0af2bf9b95",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 1895,
+              "unchanged_candidates": 3873,
+              "invalid_candidates": 1348,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 547,
+              "successful_candidates": 34,
+              "stage": "Moeva2",
+              "source_npz_sha256": "d1ad5d4d0c573c51e50c0cea83cb2d4633f7ce63fd496abab4e02b8d51883b5d",
+              "constraint_failures_overlapping": {
+                "relation_ok": 1348,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 2516,
+              "fully_reverted_changed_candidates": 804,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 2516
+              }
+            }
+          ]
+        },
+        "relation_and_budget": {
+          "summary": {
+            "model": "default",
+            "seed": 0,
+            "method": "relation_and_budget",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 1599,
+            "pool_unchanged_candidates": 4229,
+            "pool_invalid_candidates": 0,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 1599,
+            "pool_successful_candidates": 104,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 26,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 693,
+            "baseline_attack_seconds_with_trace": 203.19801021199987,
+            "added_wall_seconds": 4.424638049999885,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 725,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 2.020957393999879,
+            "constraint_and_distance_seconds": 1.6324095160000525,
+            "prediction_seconds": 0.20360007799990854,
+            "unique_changed_feasible_rows_scored": 693,
+            "postprocess_wall_seconds": 4.387487598999996,
+            "forward_counts": {
+              "forward_calls": 2,
+              "forward_rows": 693,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.03715045099988856,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 28,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "7866f985f274c3f5a75eac7074ae1e0836babe5bcaebacd621619e0af2bf9b95",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 28,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 608,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 1571,
+              "unchanged_candidates": 4197,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 1571,
+              "successful_candidates": 100,
+              "stage": "Moeva2",
+              "source_npz_sha256": "d1ad5d4d0c573c51e50c0cea83cb2d4633f7ce63fd496abab4e02b8d51883b5d",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 2659,
+              "fully_reverted_changed_candidates": 1128,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 3903,
+                "budget_blocks_restored": 1152
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "default",
+      "seed": 1,
+      "attack_seconds_with_trace": 196.47653546399988,
+      "attack_forward_counts": {
+        "forward_calls": 3139,
+        "forward_rows": 150896,
+        "grad_enabled_forward_calls": 23,
+        "grad_enabled_forward_rows": 644
+      },
+      "observer_rng_preservation_checked": true,
+      "upstream_selector_unchanged": true,
+      "methods": {
+        "original": {
+          "summary": {
+            "model": "default",
+            "seed": 1,
+            "method": "original",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2781,
+            "pool_unchanged_candidates": 3047,
+            "pool_invalid_candidates": 1840,
+            "pool_over_budget_candidates": 2546,
+            "pool_changed_valid_in_budget": 58,
+            "pool_successful_candidates": 42,
+            "method_pool_covered_records": 3,
+            "union_covered_records": 3,
+            "union_coverage_fraction": 0.09375,
+            "additional_covered_records": 0,
+            "initially_detected_covered_records_union": 3,
+            "unique_changed_feasible_candidates_union": 38,
+            "baseline_attack_seconds_with_trace": 196.47653546399988,
+            "added_wall_seconds": 0.0,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 0,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.0,
+            "constraint_and_distance_seconds": 0.0,
+            "prediction_seconds": 0.0,
+            "unique_changed_feasible_rows_scored": 0,
+            "postprocess_wall_seconds": 0.15476366400002917,
+            "forward_counts": {
+              "forward_calls": 0,
+              "forward_rows": 0,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0,
+          "final_gate_forward_counts": {
+            "forward_calls": 0,
+            "forward_rows": 0,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "bdc8f11d9aa07506b4b883d51ee670dcd3a8a32efe3fac0e4b598665feaa778d",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2753,
+              "unchanged_candidates": 3015,
+              "invalid_candidates": 1812,
+              "over_budget_candidates": 2546,
+              "changed_valid_in_budget": 58,
+              "successful_candidates": 38,
+              "stage": "Moeva2",
+              "source_npz_sha256": "f8dd49886da202c1860efe7ee16edf6334f8ed6476f2b12fbfa34d89050880bf",
+              "constraint_failures_overlapping": {
+                "relation_ok": 1812,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            }
+          ]
+        },
+        "budget_only": {
+          "summary": {
+            "model": "default",
+            "seed": 1,
+            "method": "budget_only",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 1866,
+            "pool_unchanged_candidates": 3962,
+            "pool_invalid_candidates": 1289,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 577,
+            "pool_successful_candidates": 42,
+            "method_pool_covered_records": 27,
+            "union_covered_records": 27,
+            "union_coverage_fraction": 0.84375,
+            "additional_covered_records": 24,
+            "initially_detected_covered_records_union": 27,
+            "unique_changed_feasible_candidates_union": 300,
+            "baseline_attack_seconds_with_trace": 196.47653546399988,
+            "added_wall_seconds": 4.223007027000222,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 332,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 1.171438187000149,
+            "constraint_and_distance_seconds": 2.383254973000021,
+            "prediction_seconds": 0.06717531499998586,
+            "unique_changed_feasible_rows_scored": 300,
+            "postprocess_wall_seconds": 4.1855753880001885,
+            "forward_counts": {
+              "forward_calls": 1,
+              "forward_rows": 300,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0374316390000331,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "bdc8f11d9aa07506b4b883d51ee670dcd3a8a32efe3fac0e4b598665feaa778d",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 1838,
+              "unchanged_candidates": 3930,
+              "invalid_candidates": 1261,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 577,
+              "successful_candidates": 38,
+              "stage": "Moeva2",
+              "source_npz_sha256": "f8dd49886da202c1860efe7ee16edf6334f8ed6476f2b12fbfa34d89050880bf",
+              "constraint_failures_overlapping": {
+                "relation_ok": 1261,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 2546,
+              "fully_reverted_changed_candidates": 915,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 2546
+              }
+            }
+          ]
+        },
+        "relation_and_budget": {
+          "summary": {
+            "model": "default",
+            "seed": 1,
+            "method": "relation_and_budget",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 1543,
+            "pool_unchanged_candidates": 4285,
+            "pool_invalid_candidates": 0,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 1543,
+            "pool_successful_candidates": 115,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 25,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 719,
+            "baseline_attack_seconds_with_trace": 196.47653546399988,
+            "added_wall_seconds": 4.4083682220000355,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 751,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 2.0690969370000403,
+            "constraint_and_distance_seconds": 1.5853930769997078,
+            "prediction_seconds": 0.20171313899982124,
+            "unique_changed_feasible_rows_scored": 719,
+            "postprocess_wall_seconds": 4.371326834000001,
+            "forward_counts": {
+              "forward_calls": 2,
+              "forward_rows": 719,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0370413880000342,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 28,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "bdc8f11d9aa07506b4b883d51ee670dcd3a8a32efe3fac0e4b598665feaa778d",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 28,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 596,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 1515,
+              "unchanged_candidates": 4253,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 1515,
+              "successful_candidates": 111,
+              "stage": "Moeva2",
+              "source_npz_sha256": "f8dd49886da202c1860efe7ee16edf6334f8ed6476f2b12fbfa34d89050880bf",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 2695,
+              "fully_reverted_changed_candidates": 1238,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 3727,
+                "budget_blocks_restored": 1142
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "default",
+      "seed": 2,
+      "attack_seconds_with_trace": 206.44534170700013,
+      "attack_forward_counts": {
+        "forward_calls": 3139,
+        "forward_rows": 150896,
+        "grad_enabled_forward_calls": 23,
+        "grad_enabled_forward_rows": 644
+      },
+      "observer_rng_preservation_checked": true,
+      "upstream_selector_unchanged": true,
+      "methods": {
+        "original": {
+          "summary": {
+            "model": "default",
+            "seed": 2,
+            "method": "original",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 3276,
+            "pool_unchanged_candidates": 2552,
+            "pool_invalid_candidates": 2264,
+            "pool_over_budget_candidates": 3051,
+            "pool_changed_valid_in_budget": 36,
+            "pool_successful_candidates": 34,
+            "method_pool_covered_records": 4,
+            "union_covered_records": 4,
+            "union_coverage_fraction": 0.125,
+            "additional_covered_records": 0,
+            "initially_detected_covered_records_union": 4,
+            "unique_changed_feasible_candidates_union": 14,
+            "baseline_attack_seconds_with_trace": 206.44534170700013,
+            "added_wall_seconds": 0.0,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 0,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.0,
+            "constraint_and_distance_seconds": 0.0,
+            "prediction_seconds": 0.0,
+            "unique_changed_feasible_rows_scored": 0,
+            "postprocess_wall_seconds": 0.15771059100006823,
+            "forward_counts": {
+              "forward_calls": 0,
+              "forward_rows": 0,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0,
+          "final_gate_forward_counts": {
+            "forward_calls": 0,
+            "forward_rows": 0,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "4e30ce33e6aa8f3ff495fc777690c81a287019981bdaa9dacec3627d644440f3",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 3248,
+              "unchanged_candidates": 2520,
+              "invalid_candidates": 2236,
+              "over_budget_candidates": 3051,
+              "changed_valid_in_budget": 36,
+              "successful_candidates": 30,
+              "stage": "Moeva2",
+              "source_npz_sha256": "85b21c2bf6d8e00d5d17c6954ac76f2bbafe1ccfd0d45e2ffe5cb30c2f55aab5",
+              "constraint_failures_overlapping": {
+                "relation_ok": 2236,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            }
+          ]
+        },
+        "budget_only": {
+          "summary": {
+            "model": "default",
+            "seed": 2,
+            "method": "budget_only",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2683,
+            "pool_unchanged_candidates": 3145,
+            "pool_invalid_candidates": 1940,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 743,
+            "pool_successful_candidates": 35,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 24,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 377,
+            "baseline_attack_seconds_with_trace": 206.44534170700013,
+            "added_wall_seconds": 3.6083103849996405,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 409,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.743053196999881,
+            "constraint_and_distance_seconds": 2.1556821570002285,
+            "prediction_seconds": 0.08529269399923578,
+            "unique_changed_feasible_rows_scored": 377,
+            "postprocess_wall_seconds": 3.569032634999985,
+            "forward_counts": {
+              "forward_calls": 1,
+              "forward_rows": 377,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0392777499996555,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "4e30ce33e6aa8f3ff495fc777690c81a287019981bdaa9dacec3627d644440f3",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2655,
+              "unchanged_candidates": 3113,
+              "invalid_candidates": 1912,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 743,
+              "successful_candidates": 31,
+              "stage": "Moeva2",
+              "source_npz_sha256": "85b21c2bf6d8e00d5d17c6954ac76f2bbafe1ccfd0d45e2ffe5cb30c2f55aab5",
+              "constraint_failures_overlapping": {
+                "relation_ok": 1912,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3051,
+              "fully_reverted_changed_candidates": 593,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 3051
+              }
+            }
+          ]
+        },
+        "relation_and_budget": {
+          "summary": {
+            "model": "default",
+            "seed": 2,
+            "method": "relation_and_budget",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 1,
+            "new_evasion_rate_among_initially_detected": 0.03571428571428571,
+            "malicious_recall_after_attack": 0.84375,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2233,
+            "pool_unchanged_candidates": 3595,
+            "pool_invalid_candidates": 0,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 2233,
+            "pool_successful_candidates": 135,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 24,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 976,
+            "baseline_attack_seconds_with_trace": 206.44534170700013,
+            "added_wall_seconds": 4.572168875999978,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 1008,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 2.0494768379999186,
+            "constraint_and_distance_seconds": 1.6459667989997797,
+            "prediction_seconds": 0.2943482350005979,
+            "unique_changed_feasible_rows_scored": 976,
+            "postprocess_wall_seconds": 4.534898308000265,
+            "forward_counts": {
+              "forward_calls": 2,
+              "forward_rows": 976,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.03727056799971251,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "afc582ae6f60feff7f43971d3885a2a9679e579ba2f754296b20ce519e16a7be",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 28,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "4e30ce33e6aa8f3ff495fc777690c81a287019981bdaa9dacec3627d644440f3",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 28,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 599,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2205,
+              "unchanged_candidates": 3563,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 2205,
+              "successful_candidates": 131,
+              "stage": "Moeva2",
+              "source_npz_sha256": "85b21c2bf6d8e00d5d17c6954ac76f2bbafe1ccfd0d45e2ffe5cb30c2f55aab5",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3212,
+              "fully_reverted_changed_candidates": 1043,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 4411,
+                "budget_blocks_restored": 2304
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "madry",
+      "seed": 0,
+      "attack_seconds_with_trace": 195.2460301189999,
+      "attack_forward_counts": {
+        "forward_calls": 3139,
+        "forward_rows": 150896,
+        "grad_enabled_forward_calls": 23,
+        "grad_enabled_forward_rows": 644
+      },
+      "observer_rng_preservation_checked": true,
+      "upstream_selector_unchanged": true,
+      "methods": {
+        "original": {
+          "summary": {
+            "model": "madry",
+            "seed": 0,
+            "method": "original",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 3297,
+            "pool_unchanged_candidates": 2531,
+            "pool_invalid_candidates": 2419,
+            "pool_over_budget_candidates": 3162,
+            "pool_changed_valid_in_budget": 13,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 1,
+            "union_covered_records": 1,
+            "union_coverage_fraction": 0.03125,
+            "additional_covered_records": 0,
+            "initially_detected_covered_records_union": 1,
+            "unique_changed_feasible_candidates_union": 11,
+            "baseline_attack_seconds_with_trace": 195.2460301189999,
+            "added_wall_seconds": 0.0,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 0,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.0,
+            "constraint_and_distance_seconds": 0.0,
+            "prediction_seconds": 0.0,
+            "unique_changed_feasible_rows_scored": 0,
+            "postprocess_wall_seconds": 0.10475364400008402,
+            "forward_counts": {
+              "forward_calls": 0,
+              "forward_rows": 0,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0,
+          "final_gate_forward_counts": {
+            "forward_calls": 0,
+            "forward_rows": 0,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "fa5a1c4cc23e3a7810e7e1f8366c6a19341c15d5114b463ef136c54d3c47e2f8",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 3269,
+              "unchanged_candidates": 2499,
+              "invalid_candidates": 2391,
+              "over_budget_candidates": 3162,
+              "changed_valid_in_budget": 13,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "fc3f66fad5f3a476bc9222b21e15484d7a9f9982411169c116ba614821718d09",
+              "constraint_failures_overlapping": {
+                "relation_ok": 2391,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            }
+          ]
+        },
+        "budget_only": {
+          "summary": {
+            "model": "madry",
+            "seed": 0,
+            "method": "budget_only",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2338,
+            "pool_unchanged_candidates": 3490,
+            "pool_invalid_candidates": 1578,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 760,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 27,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 382,
+            "baseline_attack_seconds_with_trace": 195.2460301189999,
+            "added_wall_seconds": 3.973674028000005,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 414,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.4521687389997169,
+            "constraint_and_distance_seconds": 2.4108375790005994,
+            "prediction_seconds": 0.2226009759997396,
+            "unique_changed_feasible_rows_scored": 382,
+            "postprocess_wall_seconds": 3.8619953339998574,
+            "forward_counts": {
+              "forward_calls": 1,
+              "forward_rows": 382,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.11167869400014752,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "fa5a1c4cc23e3a7810e7e1f8366c6a19341c15d5114b463ef136c54d3c47e2f8",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2310,
+              "unchanged_candidates": 3458,
+              "invalid_candidates": 1550,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 760,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "fc3f66fad5f3a476bc9222b21e15484d7a9f9982411169c116ba614821718d09",
+              "constraint_failures_overlapping": {
+                "relation_ok": 1550,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3162,
+              "fully_reverted_changed_candidates": 959,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 3179
+              }
+            }
+          ]
+        },
+        "relation_and_budget": {
+          "summary": {
+            "model": "madry",
+            "seed": 0,
+            "method": "relation_and_budget",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 1765,
+            "pool_unchanged_candidates": 4063,
+            "pool_invalid_candidates": 0,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 1765,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 27,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 865,
+            "baseline_attack_seconds_with_trace": 195.2460301189999,
+            "added_wall_seconds": 4.672227840000232,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 897,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 2.290875998000047,
+            "constraint_and_distance_seconds": 1.6046362940005565,
+            "prediction_seconds": 0.21893512600081522,
+            "unique_changed_feasible_rows_scored": 865,
+            "postprocess_wall_seconds": 4.63501979800003,
+            "forward_counts": {
+              "forward_calls": 2,
+              "forward_rows": 865,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.03720804200020211,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 28,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "fa5a1c4cc23e3a7810e7e1f8366c6a19341c15d5114b463ef136c54d3c47e2f8",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 28,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 610,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 1737,
+              "unchanged_candidates": 4031,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 1737,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "fc3f66fad5f3a476bc9222b21e15484d7a9f9982411169c116ba614821718d09",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3256,
+              "fully_reverted_changed_candidates": 1532,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 4525,
+                "budget_blocks_restored": 1532
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "madry",
+      "seed": 1,
+      "attack_seconds_with_trace": 194.27120168300007,
+      "attack_forward_counts": {
+        "forward_calls": 3139,
+        "forward_rows": 150896,
+        "grad_enabled_forward_calls": 23,
+        "grad_enabled_forward_rows": 644
+      },
+      "observer_rng_preservation_checked": true,
+      "upstream_selector_unchanged": true,
+      "methods": {
+        "original": {
+          "summary": {
+            "model": "madry",
+            "seed": 1,
+            "method": "original",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 3628,
+            "pool_unchanged_candidates": 2200,
+            "pool_invalid_candidates": 2940,
+            "pool_over_budget_candidates": 3471,
+            "pool_changed_valid_in_budget": 26,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 1,
+            "union_covered_records": 1,
+            "union_coverage_fraction": 0.03125,
+            "additional_covered_records": 0,
+            "initially_detected_covered_records_union": 1,
+            "unique_changed_feasible_candidates_union": 23,
+            "baseline_attack_seconds_with_trace": 194.27120168300007,
+            "added_wall_seconds": 0.0,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 0,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.0,
+            "constraint_and_distance_seconds": 0.0,
+            "prediction_seconds": 0.0,
+            "unique_changed_feasible_rows_scored": 0,
+            "postprocess_wall_seconds": 0.10518590299989228,
+            "forward_counts": {
+              "forward_calls": 0,
+              "forward_rows": 0,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0,
+          "final_gate_forward_counts": {
+            "forward_calls": 0,
+            "forward_rows": 0,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "0f99a66b07b76cbc0de8c805fae267804173f27dffe7ff68d119bbe21a93af76",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 3600,
+              "unchanged_candidates": 2168,
+              "invalid_candidates": 2912,
+              "over_budget_candidates": 3471,
+              "changed_valid_in_budget": 26,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "a94462c44ad109f1d108a7c4f639d8a1238183f9232b2b9419ea8890cc4f0d43",
+              "constraint_failures_overlapping": {
+                "relation_ok": 2912,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            }
+          ]
+        },
+        "budget_only": {
+          "summary": {
+            "model": "madry",
+            "seed": 1,
+            "method": "budget_only",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2723,
+            "pool_unchanged_candidates": 3105,
+            "pool_invalid_candidates": 2155,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 568,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 27,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 355,
+            "baseline_attack_seconds_with_trace": 194.27120168300007,
+            "added_wall_seconds": 2.7508343839999725,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 387,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.4728979750002509,
+            "constraint_and_distance_seconds": 1.6632136850003008,
+            "prediction_seconds": 0.06154406699988613,
+            "unique_changed_feasible_rows_scored": 355,
+            "postprocess_wall_seconds": 2.7137183339996227,
+            "forward_counts": {
+              "forward_calls": 1,
+              "forward_rows": 355,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.03711605000034979,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "0f99a66b07b76cbc0de8c805fae267804173f27dffe7ff68d119bbe21a93af76",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2695,
+              "unchanged_candidates": 3073,
+              "invalid_candidates": 2127,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 568,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "a94462c44ad109f1d108a7c4f639d8a1238183f9232b2b9419ea8890cc4f0d43",
+              "constraint_failures_overlapping": {
+                "relation_ok": 2127,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3471,
+              "fully_reverted_changed_candidates": 905,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 3522
+              }
+            }
+          ]
+        },
+        "relation_and_budget": {
+          "summary": {
+            "model": "madry",
+            "seed": 1,
+            "method": "relation_and_budget",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2120,
+            "pool_unchanged_candidates": 3708,
+            "pool_invalid_candidates": 0,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 2120,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 27,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 1112,
+            "baseline_attack_seconds_with_trace": 194.27120168300007,
+            "added_wall_seconds": 6.176514144000066,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 1144,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 3.3248442009999053,
+            "constraint_and_distance_seconds": 2.0087615199995525,
+            "prediction_seconds": 0.25716296200016586,
+            "unique_changed_feasible_rows_scored": 1112,
+            "postprocess_wall_seconds": 6.138202889999775,
+            "forward_counts": {
+              "forward_calls": 2,
+              "forward_rows": 1112,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.03831125400029123,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 28,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "0f99a66b07b76cbc0de8c805fae267804173f27dffe7ff68d119bbe21a93af76",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 28,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 600,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2092,
+              "unchanged_candidates": 3676,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 2092,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "a94462c44ad109f1d108a7c4f639d8a1238183f9232b2b9419ea8890cc4f0d43",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3574,
+              "fully_reverted_changed_candidates": 1508,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 6365,
+                "budget_blocks_restored": 1391
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "madry",
+      "seed": 2,
+      "attack_seconds_with_trace": 197.72818463400017,
+      "attack_forward_counts": {
+        "forward_calls": 3139,
+        "forward_rows": 150896,
+        "grad_enabled_forward_calls": 23,
+        "grad_enabled_forward_rows": 644
+      },
+      "observer_rng_preservation_checked": true,
+      "upstream_selector_unchanged": true,
+      "methods": {
+        "original": {
+          "summary": {
+            "model": "madry",
+            "seed": 2,
+            "method": "original",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 3612,
+            "pool_unchanged_candidates": 2216,
+            "pool_invalid_candidates": 2695,
+            "pool_over_budget_candidates": 3498,
+            "pool_changed_valid_in_budget": 23,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 2,
+            "union_covered_records": 2,
+            "union_coverage_fraction": 0.0625,
+            "additional_covered_records": 0,
+            "initially_detected_covered_records_union": 2,
+            "unique_changed_feasible_candidates_union": 16,
+            "baseline_attack_seconds_with_trace": 197.72818463400017,
+            "added_wall_seconds": 0.0,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 0,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.0,
+            "constraint_and_distance_seconds": 0.0,
+            "prediction_seconds": 0.0,
+            "unique_changed_feasible_rows_scored": 0,
+            "postprocess_wall_seconds": 0.11949479000031715,
+            "forward_counts": {
+              "forward_calls": 0,
+              "forward_rows": 0,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.0,
+          "final_gate_forward_counts": {
+            "forward_calls": 0,
+            "forward_rows": 0,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "857565eb59a0b6ebfc274da5e6e6cb30e116ec21d23b60ed3341a485dd98515c",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 3584,
+              "unchanged_candidates": 2184,
+              "invalid_candidates": 2667,
+              "over_budget_candidates": 3498,
+              "changed_valid_in_budget": 23,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "68110ba5078f39da8ca99a7c81d6c2acc1d7ab5041695ad7c34335ab5b2668c5",
+              "constraint_failures_overlapping": {
+                "relation_ok": 2667,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              }
+            }
+          ]
+        },
+        "budget_only": {
+          "summary": {
+            "model": "madry",
+            "seed": 2,
+            "method": "budget_only",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2791,
+            "pool_unchanged_candidates": 3037,
+            "pool_invalid_candidates": 2047,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 744,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 26,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 419,
+            "baseline_attack_seconds_with_trace": 197.72818463400017,
+            "added_wall_seconds": 2.714375199999722,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 451,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 0.4341239020000103,
+            "constraint_and_distance_seconds": 1.6414108250000936,
+            "prediction_seconds": 0.08116202900009739,
+            "unique_changed_feasible_rows_scored": 419,
+            "postprocess_wall_seconds": 2.6712165339999956,
+            "forward_counts": {
+              "forward_calls": 1,
+              "forward_rows": 419,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.04315866599972651,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 28,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "857565eb59a0b6ebfc274da5e6e6cb30e116ec21d23b60ed3341a485dd98515c",
+              "constraint_failures_overlapping": {
+                "relation_ok": 28,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2763,
+              "unchanged_candidates": 3005,
+              "invalid_candidates": 2019,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 744,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "68110ba5078f39da8ca99a7c81d6c2acc1d7ab5041695ad7c34335ab5b2668c5",
+              "constraint_failures_overlapping": {
+                "relation_ok": 2019,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3498,
+              "fully_reverted_changed_candidates": 821,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 3549
+              }
+            }
+          ]
+        },
+        "relation_and_budget": {
+          "summary": {
+            "model": "madry",
+            "seed": 2,
+            "method": "relation_and_budget",
+            "n_selected": 32,
+            "n_malicious_attacked": 32,
+            "clean_detected": 28,
+            "already_missed_before_attack": 4,
+            "returned_candidates_valid_and_in_budget": 32,
+            "newly_evaded": 0,
+            "new_evasion_rate_among_initially_detected": 0.0,
+            "malicious_recall_after_attack": 0.875,
+            "clean_recall_on_same_subset": 0.875,
+            "pool_candidates": 5828,
+            "pool_changed_candidates": 2282,
+            "pool_unchanged_candidates": 3546,
+            "pool_invalid_candidates": 0,
+            "pool_over_budget_candidates": 0,
+            "pool_changed_valid_in_budget": 2282,
+            "pool_successful_candidates": 4,
+            "method_pool_covered_records": 28,
+            "union_covered_records": 28,
+            "union_coverage_fraction": 0.875,
+            "additional_covered_records": 26,
+            "initially_detected_covered_records_union": 28,
+            "unique_changed_feasible_candidates_union": 1178,
+            "baseline_attack_seconds_with_trace": 197.72818463400017,
+            "added_wall_seconds": 6.143063314999836,
+            "baseline_attack_forward_rows": 150896,
+            "added_prediction_forward_rows": 1210,
+            "final_selection_rejections": 0
+          },
+          "costs": {
+            "repair_compute_seconds": 2.895089508000183,
+            "constraint_and_distance_seconds": 2.386560846000066,
+            "prediction_seconds": 0.26965375000054337,
+            "unique_changed_feasible_rows_scored": 1178,
+            "postprocess_wall_seconds": 6.10492005199967,
+            "forward_counts": {
+              "forward_calls": 2,
+              "forward_rows": 1178,
+              "grad_enabled_forward_calls": 0,
+              "grad_enabled_forward_rows": 0
+            }
+          },
+          "final_gate_seconds": 0.03814326300016546,
+          "final_gate_forward_counts": {
+            "forward_calls": 1,
+            "forward_rows": 32,
+            "grad_enabled_forward_calls": 0,
+            "grad_enabled_forward_rows": 0
+          },
+          "stages": [
+            {
+              "candidates": 32,
+              "changed_candidates": 0,
+              "unchanged_candidates": 32,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 0,
+              "successful_candidates": 4,
+              "stage": "NoAttack",
+              "source_npz_sha256": "282e403183d864fe2b689710d659a87a68811f8e2c76d37d9e80336eb3441e72",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 0,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 0,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 28,
+              "changed_candidates": 28,
+              "unchanged_candidates": 0,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 28,
+              "successful_candidates": 0,
+              "stage": "CAPGD",
+              "source_npz_sha256": "857565eb59a0b6ebfc274da5e6e6cb30e116ec21d23b60ed3341a485dd98515c",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 28,
+              "fully_reverted_changed_candidates": 0,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 600,
+                "budget_blocks_restored": 0
+              }
+            },
+            {
+              "candidates": 5768,
+              "changed_candidates": 2254,
+              "unchanged_candidates": 3514,
+              "invalid_candidates": 0,
+              "over_budget_candidates": 0,
+              "changed_valid_in_budget": 2254,
+              "successful_candidates": 0,
+              "stage": "Moeva2",
+              "source_npz_sha256": "68110ba5078f39da8ca99a7c81d6c2acc1d7ab5041695ad7c34335ab5b2668c5",
+              "constraint_failures_overlapping": {
+                "relation_ok": 0,
+                "bounds_ok": 0,
+                "types_ok": 0,
+                "immutable_ok": 0
+              },
+              "candidates_altered_by_repair": 3561,
+              "fully_reverted_changed_candidates": 1330,
+              "blocks_restored": {
+                "basic_blocks_restored": 0,
+                "relation_blocks_restored": 5348,
+                "budget_blocks_restored": 1916
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "interpretation": [
+    "Relationship-plus-budget repair yielded changed-valid-in-budget coverage for 28/32 selected inputs across all seeds and both models.",
+    "Budget-only repair already explained most of the record-level coverage improvement.",
+    "No repaired method added evasions: standard RLN 1/28 and adversarially trained RLN 0/28 in every seed.",
+    "Standard RLN evasion concerned the same original CSV row 117132 in all three seeds.",
+    "All rechecked constraint/budget and class decisions matched; saved probabilities differed slightly on local rescoring.",
+    "CAPGD/Moeva candidate arrays differ from the local run despite matching pins, inputs and seeds. The generation difference cause was not isolated.",
+    "The three seeds share the same 32 development records, and neither environment represents an independent final evaluation.",
+    "No new IDS was trained; improved IDS accuracy and novelty remain unproven."
+  ],
+  "audit_helper_existing_output_refusal_verified": true
+}
