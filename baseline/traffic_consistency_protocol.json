@@ -1,0 +1,85 @@
+{
+  "experiment": "saved_pool_traffic_consistency_audit",
+  "profile": "positive_sum_requires_positive_max_v1",
+  "rule": "Reject an aggregate pair exactly when sum > 0 and max == 0.",
+  "metrics": [
+    "bytes_in",
+    "bytes_out",
+    "pkts_in",
+    "pkts_out",
+    "duration"
+  ],
+  "directions": [
+    "s",
+    "d"
+  ],
+  "ports": [
+    "1",
+    "3",
+    "8",
+    "10",
+    "21",
+    "22",
+    "25",
+    "53",
+    "80",
+    "110",
+    "123",
+    "135",
+    "138",
+    "161",
+    "443",
+    "445",
+    "993",
+    "OTHER"
+  ],
+  "expected_pairs": 180,
+  "added_tolerance": 0,
+  "native_relationship_tolerance": 0,
+  "native_training_prefix_rows": 143046,
+  "split_seed": 1319,
+  "validation_fraction": 0.2,
+  "clean_audit_precisions": [
+    "parsed_float64",
+    "native_float32"
+  ],
+  "scaler_sha256": "b6b473b6189712a17868b1bb0c9e04c387d629e92929e4430216360f93364dd3",
+  "candidate_selection": [
+    "native valid in its saved population geometry",
+    "within inherited scaled-L2 budget",
+    "changed from its own original",
+    "original initially detected and candidate predicted benign",
+    "for added-rule policy: no positive-sum/zero-max pair",
+    "rank by malicious probability, distance, source path, local candidate index",
+    "recheck assembled final matrix; advance rejected candidates, otherwise use original"
+  ],
+  "pool_scope": "All exported final-stage populations and each method's saved effective final output; not unexported intermediate optimizer vectors. End-only methods also retain original CAA sources. In-loop standalone policies do not include union-with-original outputs.",
+  "protocol_timing": "Specified after notebook 06's exploratory diagnostic; frozen before notebook 07 clean-control audit. This is a post-hoc development audit, not a preregistered independent test.",
+  "source_repository": "https://github.com/tongun/ctu13-botnet-detection",
+  "source_commit": "2f1624ce0f06055901edfc90219d5072d8d04895",
+  "source_files": [
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/aggregated_features_bro_logs.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/config_neris.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/read_combined_features.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/config.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/extract_features.py"
+  ],
+  "source_lineage": "Linked by serval-uni-lu/realistic_adversarial_hardening, whose CTU preprocessing lineage is described in TabularBench documentation. Exact reproduction of the pinned benchmark CSV from this extractor is not established.",
+  "source_semantics": [
+    "The extractor updates each sum and maximum from the same nonnegative observations.",
+    "Aggregates are grouped by internal host, time window, destination-port bucket and connection endpoint role.",
+    "s denotes internal originator/source; d denotes internal responder/destination.",
+    "Missing '-' observations are converted to zero; empty aggregate buckets start at zero.",
+    "tcp_sum, udp_sum and icmp_sum accumulate bytes, not connection counts.",
+    "The extractor supports multiple window sizes; the pinned CSV window length and duration unit lineage are not independently established here."
+  ],
+  "limitations": [
+    "Passing this one necessary condition is not sufficient for packet realizability or malicious functionality.",
+    "No arbitrary duration cap, byte equality, connection-count inference or generator repair is added.",
+    "No attacks, model training, threshold tuning or live packet experiments are performed.",
+    "Only native train/development rows are parsed for clean auditing; full asset hashing reads bytes without evaluating native test records.",
+    "The frozen checkpoint compatibility scaler was fitted on all feature rows in the earlier experiment; this inherited limitation remains.",
+    "If clean controls violate this rule, retain and report them; do not adjust thresholds, remove records or claim physical validity.",
+    "Repeated seeds reuse the same original records and are not independent population samples."
+  ]
+}
