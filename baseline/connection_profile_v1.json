@@ -1,0 +1,67 @@
+{
+  "profile_id": "ctu_aggregate_connection_support_v1",
+  "fixed_date": "2026-10-07",
+  "aggregate_rule": "sum > 0 implies maximum > 0 in the same aggregate",
+  "duration_rule": "duration_sum > 0 implies positive distinct external-IP, source-port and destination-port counts in the same bucket",
+  "metrics": [
+    "bytes_in",
+    "bytes_out",
+    "pkts_in",
+    "pkts_out",
+    "duration"
+  ],
+  "directions": [
+    "s",
+    "d"
+  ],
+  "ports": [
+    "1",
+    "3",
+    "8",
+    "10",
+    "21",
+    "22",
+    "25",
+    "53",
+    "80",
+    "110",
+    "123",
+    "135",
+    "138",
+    "161",
+    "443",
+    "445",
+    "993",
+    "OTHER"
+  ],
+  "aggregate_pairs": 180,
+  "duration_endpoint_pairs": 108,
+  "native_relationships": 360,
+  "native_tolerance": 0.0,
+  "additional_tolerance": 0.0,
+  "scaler_sha256": "b6b473b6189712a17868b1bb0c9e04c387d629e92929e4430216360f93364dd3",
+  "source_commit": "2f1624ce0f06055901edfc90219d5072d8d04895",
+  "source_files": [
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/aggregated_features_bro_logs.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/config_neris.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/read_combined_features.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/config.py",
+    "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/extract_features.py"
+  ],
+  "clean_control_scope": "All 143046 native train/development-prefix records, by partition, label and float64/float32 precision. Stop on any violation; do not filter or tune.",
+  "repair": "Restore complete native mutable dependency blocks implicated by a failed added rule to their own original values. Endpoint counts are immutable. Do not invent observed connections.",
+  "generation_scope": "New hard repair operates before every MOEVA population fitness evaluation. CAPGD inner gradient iterations remain unchanged; its outputs face the added outer-stage selector and final gates.",
+  "comparison": "Unchanged CAA generation plus the common final filter; budget/profile end repair; native-relationship/budget/profile end repair; budget/profile in-loop repair; native-relationship/budget/profile in-loop repair.",
+  "final_selection": "Deduplicate changed native-valid in-budget candidates per original; require both added rules; rank successful evasions by malicious score, distance and stable provenance. Recheck assembled final matrix and try the next candidate if rejected.",
+  "fairness": "Require identical pre-MOEVA arrays, MOEVA original IDs/population size and core model-forward counts relative to a fresh original CAA run. Count repair and post-selection cost separately. No equal-wall-time or equal-total-query claim.",
+  "limitations": [
+    "Development profile motivated by earlier inspected candidates, not an independent test or a novelty claim.",
+    "Necessary feature conditions do not establish packet realizability or preserved malicious behavior.",
+    "Exact reproduction of the pinned CSV from the inspected extractor remains unestablished.",
+    "The frozen compatibility scaler used all feature rows in the original experiment; this inherited limitation remains.",
+    "Repeated attack seeds reuse the same selected originals; they are not independent traffic samples.",
+    "Conservative rollback can collapse proposals into duplicate or clean vectors.",
+    "Native test rows are not parsed or scored; full asset bytes are hashed for integrity.",
+    "No new IDS training, packet replay or classification threshold tuning."
+  ]
+}
