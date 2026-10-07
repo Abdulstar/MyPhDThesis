@@ -1,0 +1,1819 @@
+{
+  "review_date": "2026-10-07",
+  "status": "verified",
+  "archive_name": "traffic_consistency_20261007T050655Z_79b2765e_results_20261007T051132Z_93f60f61.zip",
+  "archive_sha256": "ce4f13b7f14035105e6f23660905949c6442831962ba736d6211da32d677c0d9",
+  "archive_bytes": 9356606,
+  "archive_entries": 676,
+  "archive_expanded_bytes": 49375828,
+  "project_commit": "dcd13baffa31a731066e4a3ffd4a6a30f5327faa",
+  "source_snapshot_files_verified_against_github": 29,
+  "uploaded_project_tests_passed": 26,
+  "reproduction": {
+    "status": "passed",
+    "comparison_rows_matched": 30,
+    "counts": {
+      "final_archives_byte_identical": 60,
+      "final_archives_checked": 60,
+      "source_archives_byte_identical": 34,
+      "source_archives_checked": 120,
+      "array_values_exact": 1234,
+      "probability_arrays_with_rounding_differences": 86
+    },
+    "counts_and_clean_controls_identical": true,
+    "colab_audit_seconds": 123.11582909099991,
+    "local_audit_seconds": 34.30941023999998,
+    "maximum_probability_difference": 3.0994415283203125e-06,
+    "all_classes_and_native_masks_exact": true,
+    "differing_probability_entries": 5852,
+    "minimum_distance_from_class_boundary_among_probability_differences": 0.0021216869354248047
+  },
+  "independent_review": {
+    "status": "passed",
+    "counts": {
+      "source_files": 120,
+      "source_vectors": 175800,
+      "source_pair_decisions": 31644000,
+      "final_matrices": 60,
+      "final_vectors": 1920,
+      "pool_record_policy_checks": 1920
+    },
+    "comparison": [
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_original",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_budget_end",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_relation_end",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_budget_inloop",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_relation_inloop",
+        "native_newly_evaded": 2,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_original",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_budget_end",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_relation_end",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_budget_inloop",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_relation_inloop",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_original",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_budget_end",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_relation_end",
+        "native_newly_evaded": 1,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_budget_inloop",
+        "native_newly_evaded": 3,
+        "added_rule_newly_evaded": 2
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_relation_inloop",
+        "native_newly_evaded": 2,
+        "added_rule_newly_evaded": 1
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_original",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_budget_end",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_relation_end",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_budget_inloop",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_relation_inloop",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_original",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_budget_end",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_relation_end",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_budget_inloop",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_relation_inloop",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_original",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_budget_end",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_relation_end",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_budget_inloop",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_relation_inloop",
+        "native_newly_evaded": 0,
+        "added_rule_newly_evaded": 0
+      }
+    ],
+    "wall_seconds": 10.59229665700002,
+    "scope": "All exported rule masks independently recomputed; availability deduplicated per original; all final matrices freshly checked and scored with pinned models. Source native masks were checked by the main runner, not independently recomputed in this review."
+  },
+  "notebook07_counts": {
+    "stage_source_files": 90,
+    "stage_candidate_entries": 174840,
+    "final_source_files": 30,
+    "final_source_vectors": 960,
+    "rescoring_calls": 242,
+    "rescoring_rows": 179704
+  },
+  "notebook07_clean_controls": {
+    "rows": 143046,
+    "train_rows": 114436,
+    "development_rows": 28610,
+    "test_rows_parsed_or_scored": 0,
+    "precision_disagreement_rows": 0,
+    "selected_clean_rows_verified": 32,
+    "groups": [
+      {
+        "partition": "train",
+        "label": 0,
+        "precision": "parsed_float64",
+        "rows": 111666,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      },
+      {
+        "partition": "train",
+        "label": 0,
+        "precision": "native_float32",
+        "rows": 111666,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      },
+      {
+        "partition": "train",
+        "label": 1,
+        "precision": "parsed_float64",
+        "rows": 2770,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      },
+      {
+        "partition": "train",
+        "label": 1,
+        "precision": "native_float32",
+        "rows": 2770,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      },
+      {
+        "partition": "development",
+        "label": 0,
+        "precision": "parsed_float64",
+        "rows": 27918,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      },
+      {
+        "partition": "development",
+        "label": 0,
+        "precision": "native_float32",
+        "rows": 27918,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      },
+      {
+        "partition": "development",
+        "label": 1,
+        "precision": "parsed_float64",
+        "rows": 692,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      },
+      {
+        "partition": "development",
+        "label": 1,
+        "precision": "native_float32",
+        "rows": 692,
+        "flagged_rows": 0,
+        "failed_pairs": 0,
+        "nonfinite_rows": 0,
+        "negative_rows": 0
+      }
+    ],
+    "rule_passed_all_clean_controls": true,
+    "all_controls_finite_and_nonnegative": true
+  },
+  "notebook07_comparison": [
+    {
+      "model": "default",
+      "seed": 0,
+      "method": "caa_original",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "default",
+      "seed": 0,
+      "method": "caa_budget_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 0,
+      "method": "caa_relation_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 0,
+      "method": "caa_budget_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 0,
+      "method": "caa_relation_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 2,
+      "published_evasions_flagged": 2,
+      "native_final_newly_evaded": 2,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 1,
+      "method": "caa_original",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 1,
+      "method": "caa_budget_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "default",
+      "seed": 1,
+      "method": "caa_relation_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 1,
+      "method": "caa_budget_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 1,
+      "method": "caa_relation_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 2,
+      "method": "caa_original",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 2,
+      "method": "caa_budget_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 2,
+      "method": "caa_relation_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 1,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 1,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "default",
+      "seed": 2,
+      "method": "caa_budget_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 3,
+      "published_evasions_flagged": 1,
+      "native_final_newly_evaded": 3,
+      "native_plus_support_final_newly_evaded": 2,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "default",
+      "seed": 2,
+      "method": "caa_relation_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 2,
+      "published_evasions_flagged": 2,
+      "native_final_newly_evaded": 2,
+      "native_plus_support_final_newly_evaded": 1,
+      "flagged_published_evasions_with_passing_alternative": 1
+    },
+    {
+      "model": "madry",
+      "seed": 0,
+      "method": "caa_original",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 0,
+      "method": "caa_budget_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 0,
+      "method": "caa_relation_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 0,
+      "method": "caa_budget_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 0,
+      "method": "caa_relation_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 1,
+      "method": "caa_original",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 1,
+      "method": "caa_budget_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 1,
+      "method": "caa_relation_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 1,
+      "method": "caa_budget_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 1,
+      "method": "caa_relation_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 2,
+      "method": "caa_original",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 2,
+      "method": "caa_budget_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 2,
+      "method": "caa_relation_end",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 2,
+      "method": "caa_budget_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    },
+    {
+      "model": "madry",
+      "seed": 2,
+      "method": "caa_relation_inloop",
+      "clean_detected": 28,
+      "published_newly_evaded": 0,
+      "published_evasions_flagged": 0,
+      "native_final_newly_evaded": 0,
+      "native_plus_support_final_newly_evaded": 0,
+      "flagged_published_evasions_with_passing_alternative": 0
+    }
+  ],
+  "surviving_extra_candidate": {
+    "csv_row_zero_based": 134407,
+    "model": "default",
+    "seed": 2,
+    "method": "caa_budget_inloop",
+    "selection": {
+      "sha256": "c5d3d1d6793cf66de2c4e895f773c316ecd054ad60aae3e9472cd75211120e1f",
+      "score": 0.0023641008883714676,
+      "distance": 0.24476072192192078,
+      "source": "inloop/default/seed_2/caa_budget_inloop/final_results.npz",
+      "index": 0,
+      "support_ok": true,
+      "prediction": 0
+    },
+    "feature_changes": [
+      {
+        "feature": "duration_sum_s_443",
+        "original": 0.0,
+        "candidate": 10930.1298828125
+      },
+      {
+        "feature": "duration_max_s_443",
+        "original": 0.0,
+        "candidate": 2191.09130859375
+      },
+      {
+        "feature": "duration_sum_d_OTHER",
+        "original": 0.0,
+        "candidate": 22768.142578125
+      },
+      {
+        "feature": "duration_max_d_OTHER",
+        "original": 0.0,
+        "candidate": 4878.5986328125
+      }
+    ],
+    "endpoint_counts_in_changed_buckets": {
+      "distinct_external_ips_s_443": 0.0,
+      "distinct_src_port_s_443": 0.0,
+      "distinct_dst_port_s_443": 0.0,
+      "distinct_external_ips_d_OTHER": 0.0,
+      "distinct_src_port_d_OTHER": 0.0,
+      "distinct_dst_port_d_OTHER": 0.0
+    },
+    "interpretation": "Positive durations in buckets with no recorded endpoints; inconsistent with the inspected extractor update logic.",
+    "exact_pinned_csv_extractor_lineage_reproduced": false
+  },
+  "exploratory_duration_support": {
+    "status": "completed",
+    "clean_controls": [
+      {
+        "partition": "train",
+        "label": 0,
+        "precision": "float64",
+        "rows": 111666,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      },
+      {
+        "partition": "train",
+        "label": 0,
+        "precision": "float32",
+        "rows": 111666,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      },
+      {
+        "partition": "train",
+        "label": 1,
+        "precision": "float64",
+        "rows": 2770,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      },
+      {
+        "partition": "train",
+        "label": 1,
+        "precision": "float32",
+        "rows": 2770,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      },
+      {
+        "partition": "development",
+        "label": 0,
+        "precision": "float64",
+        "rows": 27918,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      },
+      {
+        "partition": "development",
+        "label": 0,
+        "precision": "float32",
+        "rows": 27918,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      },
+      {
+        "partition": "development",
+        "label": 1,
+        "precision": "float64",
+        "rows": 692,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      },
+      {
+        "partition": "development",
+        "label": 1,
+        "precision": "float32",
+        "rows": 692,
+        "flagged_rows": 0,
+        "failed_rule_pairs": 0
+      }
+    ],
+    "clean_flagged_record_precision_entries": 0,
+    "source_files_checked": 120,
+    "source_entries_checked": 175800,
+    "comparison": [
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_original",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 7,
+        "exploratory_unique_evasion_vectors": 7
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_budget_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 7,
+        "exploratory_unique_evasion_vectors": 7
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_relation_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 12,
+        "exploratory_unique_evasion_vectors": 11
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_budget_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 8,
+        "exploratory_unique_evasion_vectors": 4
+      },
+      {
+        "model": "default",
+        "seed": 0,
+        "method": "caa_relation_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 21,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_original",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 5,
+        "exploratory_unique_evasion_vectors": 4
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_budget_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 5,
+        "exploratory_unique_evasion_vectors": 4
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_relation_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 10,
+        "exploratory_unique_evasion_vectors": 6
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_budget_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 3,
+        "exploratory_unique_evasion_vectors": 3
+      },
+      {
+        "model": "default",
+        "seed": 1,
+        "method": "caa_relation_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 17,
+        "exploratory_unique_evasion_vectors": 3
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_original",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 2,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_budget_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 2,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_relation_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 5,
+        "exploratory_unique_evasion_vectors": 1
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_budget_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 2,
+        "notebook07_pool_evaded_records": 2,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 4,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "default",
+        "seed": 2,
+        "method": "caa_relation_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 1,
+        "notebook07_pool_evaded_records": 1,
+        "exploratory_pool_evaded_records": 1,
+        "notebook07_unique_evasion_vectors": 16,
+        "exploratory_unique_evasion_vectors": 16
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_original",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_budget_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_relation_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_budget_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 0,
+        "method": "caa_relation_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_original",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_budget_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_relation_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_budget_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 1,
+        "method": "caa_relation_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_original",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_budget_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_relation_end",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_budget_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      },
+      {
+        "model": "madry",
+        "seed": 2,
+        "method": "caa_relation_inloop",
+        "initially_detected": 28,
+        "notebook07_final_newly_evaded": 0,
+        "notebook07_pool_evaded_records": 0,
+        "exploratory_pool_evaded_records": 0,
+        "notebook07_unique_evasion_vectors": 0,
+        "exploratory_unique_evasion_vectors": 0
+      }
+    ],
+    "limitations": [
+      "Exact reproduction of the pinned CSV from this extractor remains unestablished.",
+      "Distinct counts are not connection counts; no multiplication by these counts or duration cap is inferred.",
+      "Original notebook 07 metrics are preserved; these are separate exploratory pool availability counts.",
+      "Cached native masks and predictions come from the separately verified notebook 07 audit; no new inference occurs here.",
+      "No surviving pool candidate would not establish robustness against new or stronger searches.",
+      "Passing these necessary conditions would not establish packet realizability or retained malicious function.",
+      "Native test rows are not parsed or scored; prior all-row compatibility scaler limitations remain."
+    ]
+  },
+  "exploratory_protocol": {
+    "status": "completed",
+    "experiment": "exploratory_duration_connection_support",
+    "parent_protocol_sha256": "b00e506e7eac00e976c58ba3119961aca3e01ce230eecc628952be18bcfeaccd",
+    "script_sha256": "0e23db99c4536689ecbe51787aa0310685b31f99b14417809341c3c3407dbe41",
+    "rule": "Reject duration_sum > 0 paired with zero distinct external IPs, zero distinct source ports or zero distinct destination ports in the same bucket.",
+    "rules": [
+      {
+        "duration_feature": "duration_sum_s_1",
+        "count_feature": "distinct_external_ips_s_1",
+        "duration_index": 12,
+        "count_index": 18
+      },
+      {
+        "duration_feature": "duration_sum_s_1",
+        "count_feature": "distinct_src_port_s_1",
+        "duration_index": 12,
+        "count_index": 19
+      },
+      {
+        "duration_feature": "duration_sum_s_1",
+        "count_feature": "distinct_dst_port_s_1",
+        "duration_index": 12,
+        "count_index": 20
+      },
+      {
+        "duration_feature": "duration_sum_s_3",
+        "count_feature": "distinct_external_ips_s_3",
+        "duration_index": 54,
+        "count_index": 60
+      },
+      {
+        "duration_feature": "duration_sum_s_3",
+        "count_feature": "distinct_src_port_s_3",
+        "duration_index": 54,
+        "count_index": 61
+      },
+      {
+        "duration_feature": "duration_sum_s_3",
+        "count_feature": "distinct_dst_port_s_3",
+        "duration_index": 54,
+        "count_index": 62
+      },
+      {
+        "duration_feature": "duration_sum_s_8",
+        "count_feature": "distinct_external_ips_s_8",
+        "duration_index": 96,
+        "count_index": 102
+      },
+      {
+        "duration_feature": "duration_sum_s_8",
+        "count_feature": "distinct_src_port_s_8",
+        "duration_index": 96,
+        "count_index": 103
+      },
+      {
+        "duration_feature": "duration_sum_s_8",
+        "count_feature": "distinct_dst_port_s_8",
+        "duration_index": 96,
+        "count_index": 104
+      },
+      {
+        "duration_feature": "duration_sum_s_10",
+        "count_feature": "distinct_external_ips_s_10",
+        "duration_index": 138,
+        "count_index": 144
+      },
+      {
+        "duration_feature": "duration_sum_s_10",
+        "count_feature": "distinct_src_port_s_10",
+        "duration_index": 138,
+        "count_index": 145
+      },
+      {
+        "duration_feature": "duration_sum_s_10",
+        "count_feature": "distinct_dst_port_s_10",
+        "duration_index": 138,
+        "count_index": 146
+      },
+      {
+        "duration_feature": "duration_sum_s_21",
+        "count_feature": "distinct_external_ips_s_21",
+        "duration_index": 180,
+        "count_index": 186
+      },
+      {
+        "duration_feature": "duration_sum_s_21",
+        "count_feature": "distinct_src_port_s_21",
+        "duration_index": 180,
+        "count_index": 187
+      },
+      {
+        "duration_feature": "duration_sum_s_21",
+        "count_feature": "distinct_dst_port_s_21",
+        "duration_index": 180,
+        "count_index": 188
+      },
+      {
+        "duration_feature": "duration_sum_s_22",
+        "count_feature": "distinct_external_ips_s_22",
+        "duration_index": 222,
+        "count_index": 228
+      },
+      {
+        "duration_feature": "duration_sum_s_22",
+        "count_feature": "distinct_src_port_s_22",
+        "duration_index": 222,
+        "count_index": 229
+      },
+      {
+        "duration_feature": "duration_sum_s_22",
+        "count_feature": "distinct_dst_port_s_22",
+        "duration_index": 222,
+        "count_index": 230
+      },
+      {
+        "duration_feature": "duration_sum_s_25",
+        "count_feature": "distinct_external_ips_s_25",
+        "duration_index": 264,
+        "count_index": 270
+      },
+      {
+        "duration_feature": "duration_sum_s_25",
+        "count_feature": "distinct_src_port_s_25",
+        "duration_index": 264,
+        "count_index": 271
+      },
+      {
+        "duration_feature": "duration_sum_s_25",
+        "count_feature": "distinct_dst_port_s_25",
+        "duration_index": 264,
+        "count_index": 272
+      },
+      {
+        "duration_feature": "duration_sum_s_53",
+        "count_feature": "distinct_external_ips_s_53",
+        "duration_index": 306,
+        "count_index": 312
+      },
+      {
+        "duration_feature": "duration_sum_s_53",
+        "count_feature": "distinct_src_port_s_53",
+        "duration_index": 306,
+        "count_index": 313
+      },
+      {
+        "duration_feature": "duration_sum_s_53",
+        "count_feature": "distinct_dst_port_s_53",
+        "duration_index": 306,
+        "count_index": 314
+      },
+      {
+        "duration_feature": "duration_sum_s_80",
+        "count_feature": "distinct_external_ips_s_80",
+        "duration_index": 348,
+        "count_index": 354
+      },
+      {
+        "duration_feature": "duration_sum_s_80",
+        "count_feature": "distinct_src_port_s_80",
+        "duration_index": 348,
+        "count_index": 355
+      },
+      {
+        "duration_feature": "duration_sum_s_80",
+        "count_feature": "distinct_dst_port_s_80",
+        "duration_index": 348,
+        "count_index": 356
+      },
+      {
+        "duration_feature": "duration_sum_s_110",
+        "count_feature": "distinct_external_ips_s_110",
+        "duration_index": 390,
+        "count_index": 396
+      },
+      {
+        "duration_feature": "duration_sum_s_110",
+        "count_feature": "distinct_src_port_s_110",
+        "duration_index": 390,
+        "count_index": 397
+      },
+      {
+        "duration_feature": "duration_sum_s_110",
+        "count_feature": "distinct_dst_port_s_110",
+        "duration_index": 390,
+        "count_index": 398
+      },
+      {
+        "duration_feature": "duration_sum_s_123",
+        "count_feature": "distinct_external_ips_s_123",
+        "duration_index": 432,
+        "count_index": 438
+      },
+      {
+        "duration_feature": "duration_sum_s_123",
+        "count_feature": "distinct_src_port_s_123",
+        "duration_index": 432,
+        "count_index": 439
+      },
+      {
+        "duration_feature": "duration_sum_s_123",
+        "count_feature": "distinct_dst_port_s_123",
+        "duration_index": 432,
+        "count_index": 440
+      },
+      {
+        "duration_feature": "duration_sum_s_135",
+        "count_feature": "distinct_external_ips_s_135",
+        "duration_index": 474,
+        "count_index": 480
+      },
+      {
+        "duration_feature": "duration_sum_s_135",
+        "count_feature": "distinct_src_port_s_135",
+        "duration_index": 474,
+        "count_index": 481
+      },
+      {
+        "duration_feature": "duration_sum_s_135",
+        "count_feature": "distinct_dst_port_s_135",
+        "duration_index": 474,
+        "count_index": 482
+      },
+      {
+        "duration_feature": "duration_sum_s_138",
+        "count_feature": "distinct_external_ips_s_138",
+        "duration_index": 516,
+        "count_index": 522
+      },
+      {
+        "duration_feature": "duration_sum_s_138",
+        "count_feature": "distinct_src_port_s_138",
+        "duration_index": 516,
+        "count_index": 523
+      },
+      {
+        "duration_feature": "duration_sum_s_138",
+        "count_feature": "distinct_dst_port_s_138",
+        "duration_index": 516,
+        "count_index": 524
+      },
+      {
+        "duration_feature": "duration_sum_s_161",
+        "count_feature": "distinct_external_ips_s_161",
+        "duration_index": 558,
+        "count_index": 564
+      },
+      {
+        "duration_feature": "duration_sum_s_161",
+        "count_feature": "distinct_src_port_s_161",
+        "duration_index": 558,
+        "count_index": 565
+      },
+      {
+        "duration_feature": "duration_sum_s_161",
+        "count_feature": "distinct_dst_port_s_161",
+        "duration_index": 558,
+        "count_index": 566
+      },
+      {
+        "duration_feature": "duration_sum_s_443",
+        "count_feature": "distinct_external_ips_s_443",
+        "duration_index": 600,
+        "count_index": 606
+      },
+      {
+        "duration_feature": "duration_sum_s_443",
+        "count_feature": "distinct_src_port_s_443",
+        "duration_index": 600,
+        "count_index": 607
+      },
+      {
+        "duration_feature": "duration_sum_s_443",
+        "count_feature": "distinct_dst_port_s_443",
+        "duration_index": 600,
+        "count_index": 608
+      },
+      {
+        "duration_feature": "duration_sum_s_445",
+        "count_feature": "distinct_external_ips_s_445",
+        "duration_index": 642,
+        "count_index": 648
+      },
+      {
+        "duration_feature": "duration_sum_s_445",
+        "count_feature": "distinct_src_port_s_445",
+        "duration_index": 642,
+        "count_index": 649
+      },
+      {
+        "duration_feature": "duration_sum_s_445",
+        "count_feature": "distinct_dst_port_s_445",
+        "duration_index": 642,
+        "count_index": 650
+      },
+      {
+        "duration_feature": "duration_sum_s_993",
+        "count_feature": "distinct_external_ips_s_993",
+        "duration_index": 684,
+        "count_index": 690
+      },
+      {
+        "duration_feature": "duration_sum_s_993",
+        "count_feature": "distinct_src_port_s_993",
+        "duration_index": 684,
+        "count_index": 691
+      },
+      {
+        "duration_feature": "duration_sum_s_993",
+        "count_feature": "distinct_dst_port_s_993",
+        "duration_index": 684,
+        "count_index": 692
+      },
+      {
+        "duration_feature": "duration_sum_s_OTHER",
+        "count_feature": "distinct_external_ips_s_OTHER",
+        "duration_index": 726,
+        "count_index": 732
+      },
+      {
+        "duration_feature": "duration_sum_s_OTHER",
+        "count_feature": "distinct_src_port_s_OTHER",
+        "duration_index": 726,
+        "count_index": 733
+      },
+      {
+        "duration_feature": "duration_sum_s_OTHER",
+        "count_feature": "distinct_dst_port_s_OTHER",
+        "duration_index": 726,
+        "count_index": 734
+      },
+      {
+        "duration_feature": "duration_sum_d_1",
+        "count_feature": "distinct_external_ips_d_1",
+        "duration_index": 33,
+        "count_index": 39
+      },
+      {
+        "duration_feature": "duration_sum_d_1",
+        "count_feature": "distinct_src_port_d_1",
+        "duration_index": 33,
+        "count_index": 40
+      },
+      {
+        "duration_feature": "duration_sum_d_1",
+        "count_feature": "distinct_dst_port_d_1",
+        "duration_index": 33,
+        "count_index": 41
+      },
+      {
+        "duration_feature": "duration_sum_d_3",
+        "count_feature": "distinct_external_ips_d_3",
+        "duration_index": 75,
+        "count_index": 81
+      },
+      {
+        "duration_feature": "duration_sum_d_3",
+        "count_feature": "distinct_src_port_d_3",
+        "duration_index": 75,
+        "count_index": 82
+      },
+      {
+        "duration_feature": "duration_sum_d_3",
+        "count_feature": "distinct_dst_port_d_3",
+        "duration_index": 75,
+        "count_index": 83
+      },
+      {
+        "duration_feature": "duration_sum_d_8",
+        "count_feature": "distinct_external_ips_d_8",
+        "duration_index": 117,
+        "count_index": 123
+      },
+      {
+        "duration_feature": "duration_sum_d_8",
+        "count_feature": "distinct_src_port_d_8",
+        "duration_index": 117,
+        "count_index": 124
+      },
+      {
+        "duration_feature": "duration_sum_d_8",
+        "count_feature": "distinct_dst_port_d_8",
+        "duration_index": 117,
+        "count_index": 125
+      },
+      {
+        "duration_feature": "duration_sum_d_10",
+        "count_feature": "distinct_external_ips_d_10",
+        "duration_index": 159,
+        "count_index": 165
+      },
+      {
+        "duration_feature": "duration_sum_d_10",
+        "count_feature": "distinct_src_port_d_10",
+        "duration_index": 159,
+        "count_index": 166
+      },
+      {
+        "duration_feature": "duration_sum_d_10",
+        "count_feature": "distinct_dst_port_d_10",
+        "duration_index": 159,
+        "count_index": 167
+      },
+      {
+        "duration_feature": "duration_sum_d_21",
+        "count_feature": "distinct_external_ips_d_21",
+        "duration_index": 201,
+        "count_index": 207
+      },
+      {
+        "duration_feature": "duration_sum_d_21",
+        "count_feature": "distinct_src_port_d_21",
+        "duration_index": 201,
+        "count_index": 208
+      },
+      {
+        "duration_feature": "duration_sum_d_21",
+        "count_feature": "distinct_dst_port_d_21",
+        "duration_index": 201,
+        "count_index": 209
+      },
+      {
+        "duration_feature": "duration_sum_d_22",
+        "count_feature": "distinct_external_ips_d_22",
+        "duration_index": 243,
+        "count_index": 249
+      },
+      {
+        "duration_feature": "duration_sum_d_22",
+        "count_feature": "distinct_src_port_d_22",
+        "duration_index": 243,
+        "count_index": 250
+      },
+      {
+        "duration_feature": "duration_sum_d_22",
+        "count_feature": "distinct_dst_port_d_22",
+        "duration_index": 243,
+        "count_index": 251
+      },
+      {
+        "duration_feature": "duration_sum_d_25",
+        "count_feature": "distinct_external_ips_d_25",
+        "duration_index": 285,
+        "count_index": 291
+      },
+      {
+        "duration_feature": "duration_sum_d_25",
+        "count_feature": "distinct_src_port_d_25",
+        "duration_index": 285,
+        "count_index": 292
+      },
+      {
+        "duration_feature": "duration_sum_d_25",
+        "count_feature": "distinct_dst_port_d_25",
+        "duration_index": 285,
+        "count_index": 293
+      },
+      {
+        "duration_feature": "duration_sum_d_53",
+        "count_feature": "distinct_external_ips_d_53",
+        "duration_index": 327,
+        "count_index": 333
+      },
+      {
+        "duration_feature": "duration_sum_d_53",
+        "count_feature": "distinct_src_port_d_53",
+        "duration_index": 327,
+        "count_index": 334
+      },
+      {
+        "duration_feature": "duration_sum_d_53",
+        "count_feature": "distinct_dst_port_d_53",
+        "duration_index": 327,
+        "count_index": 335
+      },
+      {
+        "duration_feature": "duration_sum_d_80",
+        "count_feature": "distinct_external_ips_d_80",
+        "duration_index": 369,
+        "count_index": 375
+      },
+      {
+        "duration_feature": "duration_sum_d_80",
+        "count_feature": "distinct_src_port_d_80",
+        "duration_index": 369,
+        "count_index": 376
+      },
+      {
+        "duration_feature": "duration_sum_d_80",
+        "count_feature": "distinct_dst_port_d_80",
+        "duration_index": 369,
+        "count_index": 377
+      },
+      {
+        "duration_feature": "duration_sum_d_110",
+        "count_feature": "distinct_external_ips_d_110",
+        "duration_index": 411,
+        "count_index": 417
+      },
+      {
+        "duration_feature": "duration_sum_d_110",
+        "count_feature": "distinct_src_port_d_110",
+        "duration_index": 411,
+        "count_index": 418
+      },
+      {
+        "duration_feature": "duration_sum_d_110",
+        "count_feature": "distinct_dst_port_d_110",
+        "duration_index": 411,
+        "count_index": 419
+      },
+      {
+        "duration_feature": "duration_sum_d_123",
+        "count_feature": "distinct_external_ips_d_123",
+        "duration_index": 453,
+        "count_index": 459
+      },
+      {
+        "duration_feature": "duration_sum_d_123",
+        "count_feature": "distinct_src_port_d_123",
+        "duration_index": 453,
+        "count_index": 460
+      },
+      {
+        "duration_feature": "duration_sum_d_123",
+        "count_feature": "distinct_dst_port_d_123",
+        "duration_index": 453,
+        "count_index": 461
+      },
+      {
+        "duration_feature": "duration_sum_d_135",
+        "count_feature": "distinct_external_ips_d_135",
+        "duration_index": 495,
+        "count_index": 501
+      },
+      {
+        "duration_feature": "duration_sum_d_135",
+        "count_feature": "distinct_src_port_d_135",
+        "duration_index": 495,
+        "count_index": 502
+      },
+      {
+        "duration_feature": "duration_sum_d_135",
+        "count_feature": "distinct_dst_port_d_135",
+        "duration_index": 495,
+        "count_index": 503
+      },
+      {
+        "duration_feature": "duration_sum_d_138",
+        "count_feature": "distinct_external_ips_d_138",
+        "duration_index": 537,
+        "count_index": 543
+      },
+      {
+        "duration_feature": "duration_sum_d_138",
+        "count_feature": "distinct_src_port_d_138",
+        "duration_index": 537,
+        "count_index": 544
+      },
+      {
+        "duration_feature": "duration_sum_d_138",
+        "count_feature": "distinct_dst_port_d_138",
+        "duration_index": 537,
+        "count_index": 545
+      },
+      {
+        "duration_feature": "duration_sum_d_161",
+        "count_feature": "distinct_external_ips_d_161",
+        "duration_index": 579,
+        "count_index": 585
+      },
+      {
+        "duration_feature": "duration_sum_d_161",
+        "count_feature": "distinct_src_port_d_161",
+        "duration_index": 579,
+        "count_index": 586
+      },
+      {
+        "duration_feature": "duration_sum_d_161",
+        "count_feature": "distinct_dst_port_d_161",
+        "duration_index": 579,
+        "count_index": 587
+      },
+      {
+        "duration_feature": "duration_sum_d_443",
+        "count_feature": "distinct_external_ips_d_443",
+        "duration_index": 621,
+        "count_index": 627
+      },
+      {
+        "duration_feature": "duration_sum_d_443",
+        "count_feature": "distinct_src_port_d_443",
+        "duration_index": 621,
+        "count_index": 628
+      },
+      {
+        "duration_feature": "duration_sum_d_443",
+        "count_feature": "distinct_dst_port_d_443",
+        "duration_index": 621,
+        "count_index": 629
+      },
+      {
+        "duration_feature": "duration_sum_d_445",
+        "count_feature": "distinct_external_ips_d_445",
+        "duration_index": 663,
+        "count_index": 669
+      },
+      {
+        "duration_feature": "duration_sum_d_445",
+        "count_feature": "distinct_src_port_d_445",
+        "duration_index": 663,
+        "count_index": 670
+      },
+      {
+        "duration_feature": "duration_sum_d_445",
+        "count_feature": "distinct_dst_port_d_445",
+        "duration_index": 663,
+        "count_index": 671
+      },
+      {
+        "duration_feature": "duration_sum_d_993",
+        "count_feature": "distinct_external_ips_d_993",
+        "duration_index": 705,
+        "count_index": 711
+      },
+      {
+        "duration_feature": "duration_sum_d_993",
+        "count_feature": "distinct_src_port_d_993",
+        "duration_index": 705,
+        "count_index": 712
+      },
+      {
+        "duration_feature": "duration_sum_d_993",
+        "count_feature": "distinct_dst_port_d_993",
+        "duration_index": 705,
+        "count_index": 713
+      },
+      {
+        "duration_feature": "duration_sum_d_OTHER",
+        "count_feature": "distinct_external_ips_d_OTHER",
+        "duration_index": 747,
+        "count_index": 753
+      },
+      {
+        "duration_feature": "duration_sum_d_OTHER",
+        "count_feature": "distinct_src_port_d_OTHER",
+        "duration_index": 747,
+        "count_index": 754
+      },
+      {
+        "duration_feature": "duration_sum_d_OTHER",
+        "count_feature": "distinct_dst_port_d_OTHER",
+        "duration_index": 747,
+        "count_index": 755
+      }
+    ],
+    "source_commit": "2f1624ce0f06055901edfc90219d5072d8d04895",
+    "source_url": "https://github.com/tongun/ctu13-botnet-detection/blob/2f1624ce0f06055901edfc90219d5072d8d04895/src/aggregated_features_bro_logs.py",
+    "timing": "Chosen after inspecting the surviving development candidate; recorded before scanning all clean controls and pools. Post-hoc exploratory analysis.",
+    "basis": "The inspected extractor updates duration and all three endpoint sets for every processed connection in a bucket. Their cardinalities cannot remain zero when duration is positive.",
+    "limitations": [
+      "Exact reproduction of the pinned CSV from this extractor remains unestablished.",
+      "Distinct counts are not connection counts; no multiplication by these counts or duration cap is inferred.",
+      "Original notebook 07 metrics are preserved; these are separate exploratory pool availability counts.",
+      "Cached native masks and predictions come from the separately verified notebook 07 audit; no new inference occurs here.",
+      "No surviving pool candidate would not establish robustness against new or stronger searches.",
+      "Passing these necessary conditions would not establish packet realizability or retained malicious function.",
+      "Native test rows are not parsed or scored; prior all-row compatibility scaler limitations remain."
+    ]
+  },
+  "next_step": "Define and freeze a versioned feasibility profile including validated duration/endpoint support; apply it to candidate generation and final selection for every method; repeat the paired development experiment before larger independent evaluation or IDS retraining."
+}
