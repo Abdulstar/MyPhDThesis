@@ -1,0 +1,3 @@
+# Lightweight audit environment; no model or attack dependencies.
+numpy==2.3.5
+pandas==2.2.3

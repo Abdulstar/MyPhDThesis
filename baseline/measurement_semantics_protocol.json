@@ -1,0 +1,73 @@
+{
+  "protocol_id": "ctu_measurement_semantics_audit_v1",
+  "fixed_date": "2026-10-21",
+  "scope": "Source and measurement semantics; development-only; no model fitting, scoring or attacks.",
+  "benchmark_sha256": "37a8a8502183f1f2681b429a8f2ba6d1c1e36c75aa7ef463255275a79bd07575",
+  "benchmark_url": "https://huggingface.co/datasets/serval-uni-lu/tabularbench/resolve/49cb6c10f28d17d6e9b70ccac27a7cf6e8a563c8/ctu_13/ctu_13_neris.csv",
+  "scenario1_sha256": "b5e61c1e541f59106bb672289e7977beec2558d2313b104270bf3b2d820b4e89",
+  "scenario1_url": "https://drive.google.com/uc?export=download&id=1ZHGihxd2EJ9NuKbeWkqfoL3QfCEktV_D",
+  "scenario1_link_source": "https://github.com/achernikova/cybersecurity_evasion/blob/52a2ab95e05c535a15da226a1541ade69ed64ca1/README.md",
+  "extractor_commit": "2f1624ce0f06055901edfc90219d5072d8d04895",
+  "extractor_sha256": "0e99f052f697524212f40df0d9892880ee1a488e1ba97f5690754964b71ee934",
+  "extractor_git_blob": "6919babf3e4d2d59b14e98908eee0242c9ac7001",
+  "development_indices_sha256": "73926c79e38a8b122f46a523a440a53a038013763fe0d40a0ac7a72d7e6079a7",
+  "feature_names_sha256": "f7a347b01beb932cf4fb36e7d8f21f272ebe0a4ef1969a6ff9bc054b6a20e55a",
+  "old_profile_sha256": "c50480f6abbea7629a31f908e75c561e9147109e995e4ca6baeb56b922a69ed7",
+  "native_training_development_prefix": 143046,
+  "precisions": [
+    "float64",
+    "float32_promoted_for_arithmetic"
+  ],
+  "counterexample_csv_row": 1503,
+  "conditional_diagnostic": "duration_sum > (pkts_in_sum + pkts_out_sum) * duration_max",
+  "missingness_policy": "Unknown in every benchmark bucket: neither zero totals, positive totals nor a passing diagnostic establishes complete measurements.",
+  "hard_rule_decision": "Do not adopt the packet-duration bound or a zero-total exemption. Preserve notebook 08 profile v1 unchanged.",
+  "fixture_window_seconds": 60,
+  "fixture_window_note": "Explicit harness setting, not an assertion about the benchmark extraction configuration.",
+  "followup": {
+    "sample_size": 128,
+    "selection_seed": 20261013,
+    "exclude_pilot": true,
+    "selection_basis": "Native malicious development labels only; exclude all 32 pilot rows; no model predictions or attack outcomes.",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "models": [
+      "default",
+      "madry"
+    ],
+    "steps": 10,
+    "generations": 100,
+    "offspring": 50,
+    "eps": 0.5,
+    "status": "inputs_frozen_attacks_not_run",
+    "claim_scope": "Feature-space robustness under the unchanged explicit constraint profile; not packet realizability or IDS accuracy.",
+    "primary_comparison": "Relationship/profile repair inside MOEVA versus relationship/profile repair after native CAA.",
+    "secondary_comparisons": [
+      "caa_filter",
+      "caa_profile_budget_end",
+      "caa_profile_budget_inloop"
+    ],
+    "analysis_unit": "Original record: average paired success differences across seeds within each original; resample originals, not seeds, for any bootstrap interval.",
+    "evaluation_notes": [
+      "Report each model separately and its initially detected denominator.",
+      "Retain all selected originals; count existing clean misses separately.",
+      "Match core attack budgets and initial states; record additional repair/selection queries and wall time separately.",
+      "Keep fixed native matrix geometry when checking final selections.",
+      "Report all three seeds, per-original outcomes, attack coverage and rollback/duplicate rates.",
+      "The inputs have already participated in development-level clean-control auditing; they are not an untouched test set.",
+      "No new rule, threshold, scaler fit or model selection based on these outcomes.",
+      "Record bootstrap intervals are exploratory; they do not account for unknown host/window correlations. Do not claim population or network-level independence."
+    ]
+  },
+  "limitations": [
+    "The exact original Zeek version, connection-log CSV conversion, collection configuration and row-to-UID mapping are not recovered.",
+    "Synthetic connection-CSV fixtures demonstrate extractor behavior only, not packet feasibility or malicious functionality.",
+    "The baseline actually supplies 757 model features: 756 aggregate features plus window_timestamp.",
+    "The frozen compatibility scaler was originally fitted on all benchmark feature rows. This inherited limitation remains.",
+    "No native test rows are parsed or scored. Full asset bytes are hashed for integrity."
+  ],
+  "investigation_started": "2026-10-13"
+}
