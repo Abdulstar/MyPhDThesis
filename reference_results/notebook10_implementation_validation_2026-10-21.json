@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "validation_date": "2026-10-21",
+  "local_validation_only": true,
+  "remote_colab_executed": false,
+  "notebook": "notebooks/10_Frozen_128_Development_Replication.ipynb",
+  "notebook_default_mode": "full",
+  "notebook_validation_mode": "smoke",
+  "executed_code_cells": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    10,
+    12
+  ],
+  "existing_tests_passed": 42,
+  "new_paired_analysis_tests_passed": 5,
+  "total_tests_passed": 47,
+  "full_frozen_sample_preflight": {
+    "records": 128,
+    "features": 757,
+    "train_development_controls": 143046,
+    "profile_and_native_final_matrix_clean_checks_passed": true,
+    "pilot_overlap": 0,
+    "models": {
+      "default": {
+        "clean_detected": 122,
+        "already_missed": 6
+      },
+      "madry": {
+        "clean_detected": 122,
+        "already_missed": 6
+      }
+    }
+  },
+  "reduced_attack_validation": {
+    "selected_records": 4,
+    "model": "default",
+    "seeds": [
+      0
+    ],
+    "steps": 2,
+    "generations": 3,
+    "offspring": 4,
+    "eps": 0.5,
+    "generation_variants": 3,
+    "final_methods": 5,
+    "core_forward_counts_matched": true,
+    "independent_evidence_review": {
+      "status": "passed",
+      "smoke_check_only": true,
+      "counts": {
+        "source_files": 18,
+        "source_vectors": 4172,
+        "added_rule_decisions": 1201536,
+        "final_matrices": 5,
+        "final_vectors": 20,
+        "inloop_generation_runs": 2,
+        "logged_fitness_batches": 24,
+        "logged_fitness_rows": 1712
+      },
+      "comparison": [
+        {
+          "model": "default",
+          "seed": 0,
+          "method": "caa_filter",
+          "newly_evaded": 0,
+          "evaded_csv_rows": []
+        },
+        {
+          "model": "default",
+          "seed": 0,
+          "method": "caa_profile_budget_end",
+          "newly_evaded": 0,
+          "evaded_csv_rows": []
+        },
+        {
+          "model": "default",
+          "seed": 0,
+          "method": "caa_profile_relation_end",
+          "newly_evaded": 0,
+          "evaded_csv_rows": []
+        },
+        {
+          "model": "default",
+          "seed": 0,
+          "method": "caa_profile_budget_inloop",
+          "newly_evaded": 0,
+          "evaded_csv_rows": []
+        },
+        {
+          "model": "default",
+          "seed": 0,
+          "method": "caa_profile_relation_inloop",
+          "newly_evaded": 0,
+          "evaded_csv_rows": []
+        }
+      ],
+      "generation_audits": [
+        {
+          "model": "default",
+          "seed": 0,
+          "method": "caa_profile_budget_inloop",
+          "fitness_rows": 856,
+          "unique_vectors_summed_per_original": 24,
+          "unchanged_fitness_rows": 836,
+          "profile_blocks_restored": 16,
+          "core_forward_rows": 1724
+        },
+        {
+          "model": "default",
+          "seed": 0,
+          "method": "caa_profile_relation_inloop",
+          "fitness_rows": 856,
+          "unique_vectors_summed_per_original": 4,
+          "unchanged_fitness_rows": 856,
+          "profile_blocks_restored": 8,
+          "core_forward_rows": 1724
+        }
+      ],
+      "maximum_score_difference": 0.0,
+      "wall_seconds": 0.970790182000087,
+      "scope": "All exported native masks, rule masks, distances and classes recomputed; pools independently deduplicated; final provenance/validity/evasions checked. Intermediate fitness vectors are not exported: generation logs and matching repair/evaluation digests are cross-checked, not reconstructed."
+    },
+    "not_a_research_result": true
+  },
+  "full_budget_128_record_attack_experiment_executed": false,
+  "full_experiment_requires_colab_run": true,
+  "native_test_rows_evaluated": 0,
+  "smoke_cannot_produce_full_experiment_analysis": true,
+  "model_environment": {
+    "python": "3.8.20",
+    "numpy": "1.23.5",
+    "torch": "1.12.1+cpu",
+    "device": "cpu"
+  },
+  "notebook_host_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "baseline/frozen_followup_inputs.py": "8f4fec6a3d823f1309a7bb458d5df2dbbaf3ab56f1b64b190b99384115b37643",
+    "baseline/run_frozen_followup.py": "0d7aaf3bd2372e3fcbeb1793e5ab42eb77174b8fceb9bf3219ad3cebd3e9fc3b",
+    "scripts/summarize_frozen_followup.py": "d08700362e55c0886a8bc9cfad0952bebbc36cda7aeda0bcabdbc10a0cd970df",
+    "tests/test_frozen_followup.py": "f5fc7e5f4a9c4fd0f3d8073c5ad3e4f7a045f014059731c6dc308ac479dc7232",
+    "notebooks/10_Frozen_128_Development_Replication.ipynb": "2e5643d07d2cd5bdc74d98950d5027477740cd4537ff0c6d89487c5140d7a999",
+    "docs/FROZEN_128_REPLICATION_GUIDE.md": "883393bf434d3da1de1085ee31afff832af5c0fcdff1b5de0b3989dbe875a4b6"
+  },
+  "unchanged_core_files": [
+    "baseline/run_connection_search.py",
+    "baseline/connection_search.py",
+    "baseline/connection_profile.py",
+    "scripts/review_notebook08_evidence.py",
+    "scripts/bootstrap.py"
+  ],
+  "source_snapshots_verified": 49,
+  "export_sha256": "3522fa653bba72cea348ecba8e8eedae4b056fb9077ffe8abbd22491ebd22d58",
+  "export_members": 158,
+  "export_crc_passed": true,
+  "validation_limits": [
+    "The full 18 attack-generation runs on 128 originals have not been executed.",
+    "Both frozen models were scored on all 128 originals; reduced attacks used the first four records with default model/seed 0.",
+    "Pairing statistics were unit-tested; the full-analysis CLI correctly refused smoke output. No full research interval was produced.",
+    "Google Colab upload/download dialogs were not exercised locally; identical notebook code used existing ZIP paths and disabled browser download."
+  ]
+}
