@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-21",
+  "review_script_sha256": "caf5c36715880f63bd38da1b5ea23cef34ed2696e16fe215222050b97d21adf2",
+  "uploaded_zip_sha256": "e44eb9bf358bc7736e8e072a9b825b4dbc520ba36a7c2c05b50e397703ec076c",
+  "uploaded_session": "measurement_semantics_20261021T012235Z_08cdf07d",
+  "archive_members": 51,
+  "archive_crc_verified": true,
+  "source_commit": "d6847238ceef2a1a60711416bbf7919d38aa8739",
+  "source_tree": "b65a16ec73681cf749e546140cd3b728aae95012",
+  "source_snapshots_verified": 14,
+  "source_sha256": {
+    "baseline/measurement_semantics.py": "847741321a3b272a2f799435e168ace6725a1cb6fa649bccc061723ff8ec3274",
+    "baseline/measurement_semantics_protocol.json": "ba1bc623a501322bababc601f9c8ec738524714f2e6774d59e1b2338cb8b3d84",
+    "baseline/requirements-semantics.txt": "55677c106dc0bdbc2aa707c606ffe51193fe002f3cbc457c9f0ff1384fa30075",
+    "scripts/review_notebook08_colab.py": "c58832e130c7fb50a92d9355ca5fd3560e27ada5f6e7cfa16361b7f212262621",
+    "tests/test_measurement_semantics.py": "f478adfeaf5cd7d5f0fe244aec66912504a0618f0bb499b88b59042296fabc35",
+    "notebooks/09b_Measurement_Semantics_Colab_Fix.ipynb": "4fd1312f6758fe133a45714421bc713c7ee4f44508afccd4d36f4f914ee5bebf",
+    "scripts/bootstrap_semantics_colab.py": "1f17ecb7a72f417c932965370c9285864d61c7d5e377488e62a9bc5d1be98cfd",
+    "tests/test_semantics_colab_setup.py": "2b973034b59758d8de9a4c66ab4768202aa2a4857252759ace53a61257ebe344",
+    "docs/NOTEBOOK09_COLAB_SETUP_FIX_2026-10-21.md": "172d9a3fce989a60c573325edf083c54397c08e757669da2510883c4c6a68896",
+    "research_sources/ctu13_2f1624c/aggregated_features_bro_logs.py": "0e99f052f697524212f40df0d9892880ee1a488e1ba97f5690754964b71ee934",
+    "research_sources/ctu13_2f1624c/LICENSE": "cb9fc861ce6c828e9c119741e5534724e4bab6a2cebbb2ec90fc843ee7cd28cd",
+    "research_sources/ctu13_2f1624c/PROVENANCE.md": "4da714118442cba3115a8ae2565ebb24a453ee4b1794ef52b3bbeabd47032ba9",
+    "docs/MEASUREMENT_SEMANTICS_GUIDE.md": "1f46ddf5002195ad525532f171232bda65304a77dc81c7346eda0654ddd4e260",
+    "docs/MEASUREMENT_SEMANTICS_FINDINGS_2026-10-21.md": "695266c1f4b7c4db6ea9a289f9651a264850e0ef91d058a660d517784ab30cf4"
+  },
+  "reference_zip_sha256": "5e87e2bf5d9547c43aa69039a78b5de611965dc9d72e1d16f8c40f4ea76312fa",
+  "audit_files_compared": 30,
+  "byte_identical_non_report_audit_files": 29,
+  "report_ignored_paths": [
+    "environment.python",
+    "wall_seconds"
+  ],
+  "all_other_report_fields_match_reference_and_fresh_rerun": true,
+  "audit_output_sha256": {
+    "audit/clean_control_groups.csv": "74267257232c92757576e1f303e573da5f79490e9128065b305802dfb7a69682",
+    "audit/conditional_bound_flags.csv": "ebbe9a448510d4b611aedc5e2f34a80ae6ab65ce2276240833c261d43dc5737c",
+    "audit/counterexample_authors_row.json": "dc65ccbe8991e0f66189ba5c34aaf9bc82f8b70a35a4e393c45b9063128d3f30",
+    "audit/counterexample_benchmark_row.json": "c1e79f717d69ef10b6b967b1e9c21f59dc3e0a6fe32ae65e99cc362ec1a64722",
+    "audit/fixtures/complete_packets/aggregated.csv": "0c5ec2238d16e922b853b0594f7dcb23637fd510554b340a848cc61f4c9a676e",
+    "audit/fixtures/complete_packets/extractor.log": "e1281e37ca17aa217a48a9dc2c7a8f0dad2e8219591c926b6db6a8ab3295f34f",
+    "audit/fixtures/complete_packets/input.csv": "254b6f63e395c5e5db5f5a21f8f53cd9881084f2152d0f22d7b7092faa6ee520",
+    "audit/fixtures/duration_exceeds_window/aggregated.csv": "820fdbc07f2e573335890bd2f1467584cb212ffd1b1de43b791e120926b4d42d",
+    "audit/fixtures/duration_exceeds_window/extractor.log": "e1281e37ca17aa217a48a9dc2c7a8f0dad2e8219591c926b6db6a8ab3295f34f",
+    "audit/fixtures/duration_exceeds_window/input.csv": "bfc80c9d93655af437049ec14b995aec6f62d2819f10a67d102faadd95bd4794",
+    "audit/fixtures/leading_all_zero_record/aggregated.csv": "66e8ea864f67fb121619d6f6b4141c027b073afafb615548ea51a785e91e0d1e",
+    "audit/fixtures/leading_all_zero_record/extractor.log": "e6d146342bdbb531275d5121cc970ac27385cb957f8ed309bc67a9b93b0c7ab2",
+    "audit/fixtures/leading_all_zero_record/input.csv": "bc45bfc7a81553ef68a7ca0864f8e24fb7ac61c9a5d85ffc5760f609027f5283",
+    "audit/fixtures/literal_zero_packets/aggregated.csv": "294b3971eb498f8537cc3b0dfc495a3aaddf9915625544370b244b7e0e307aa5",
+    "audit/fixtures/literal_zero_packets/extractor.log": "e1281e37ca17aa217a48a9dc2c7a8f0dad2e8219591c926b6db6a8ab3295f34f",
+    "audit/fixtures/literal_zero_packets/input.csv": "6f5562d2d324178ca6b16736af79e8f62b35cd95ea7773c8d96da1f6748a55f7",
+    "audit/fixtures/missing_packets/aggregated.csv": "294b3971eb498f8537cc3b0dfc495a3aaddf9915625544370b244b7e0e307aa5",
+    "audit/fixtures/missing_packets/extractor.log": "e1281e37ca17aa217a48a9dc2c7a8f0dad2e8219591c926b6db6a8ab3295f34f",
+    "audit/fixtures/missing_packets/input.csv": "e167c2534d645ccb57917cfc7520fa0707977079b1c454ff305e665cb74f2291",
+    "audit/fixtures/partially_missing_passing_bound/aggregated.csv": "c37bc25bc5b4d5b4851fc8461b0e39a9d20c65a7f851edfabe022a446a4c68b3",
+    "audit/fixtures/partially_missing_passing_bound/extractor.log": "e6d146342bdbb531275d5121cc970ac27385cb957f8ed309bc67a9b93b0c7ab2",
+    "audit/fixtures/partially_missing_passing_bound/input.csv": "fa92ad6d7b51887f6000a1101520151a17ab4011ad73bfbe6507e12f3aa0ab2e",
+    "audit/fixtures/partially_missing_positive_total/aggregated.csv": "e14a51bd911fadc61fa1ae59e260ee206f6e34db87cdc1d9d34ac3fb5aeb6fa3",
+    "audit/fixtures/partially_missing_positive_total/extractor.log": "e6d146342bdbb531275d5121cc970ac27385cb957f8ed309bc67a9b93b0c7ab2",
+    "audit/fixtures/partially_missing_positive_total/input.csv": "87680790ec66c90f1277a1d1b2d562d297ab9c0c2b1607751d8001800b439405",
+    "audit/followup_inputs.npz": "f67408981fb225e2fc5833fdaced74ff852eb268ec4b3af116b5af18b41816c8",
+    "audit/followup_manifest.json": "9391ea55e4277d4d69627be761f7e846c71f4eed4f18118edb467c656198fed9",
+    "audit/protocol.json": "ba1bc623a501322bababc601f9c8ec738524714f2e6774d59e1b2338cb8b3d84",
+    "audit/report.json": "8e38d93a3e3f9d8e641dc1e00fdbd877b012ff078850d3a18f91ebe7a91dff41",
+    "audit/source_bridge.json": "34faa20bb63c6fd961b307b8d149b2d95172cd61c684f4da03f67c7d797adb36"
+  },
+  "colab_environment": {
+    "python": "3.13.16",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "reference_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "recomputed_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "colab_setup": {
+    "method": "venv_without_pip_then_host_pip_python",
+    "ensurepip_requested": false,
+    "host_pip": "pip 24.1.2 from /usr/local/lib/python3.13/dist-packages/pip (python 3.13)",
+    "installed_packages": [
+      "numpy==2.3.5",
+      "pandas==2.2.3",
+      "python-dateutil==2.9.0.post0",
+      "pytz==2026.5",
+      "six==1.17.0",
+      "tzdata==2026.5"
+    ]
+  },
+  "target_pip_installed": false,
+  "archived_passing_test_names": {
+    "setup": [
+      "test_default_setup_fails_when_ensurepip_is_blocked",
+      "test_existing_partial_environment_is_preserved",
+      "test_new_setup_works_with_ensurepip_blocked"
+    ],
+    "measurement": [
+      "test_complete_counts_satisfy_example_bound",
+      "test_minimum_cannot_count_all_records_after_leading_zeros",
+      "test_missing_and_literal_zero_collide",
+      "test_passing_bound_does_not_establish_completeness",
+      "test_positive_packet_total_does_not_cure_missingness",
+      "test_window_is_not_a_duration_cap"
+    ]
+  },
+  "colab_audit_wall_seconds": 28.018276092000008,
+  "fresh_cached_audit_wall_seconds": 9.469984765000163,
+  "timings_comparable": false,
+  "fresh_source_data_audit_executed": true,
+  "train_development_rows_rechecked": 143046,
+  "source_bridge": {
+    "original_scenario1_rows": 77183,
+    "model_features": 757,
+    "different_cells_float64": 79,
+    "different_cells_float32": 0,
+    "different_labels": 0,
+    "maximum_absolute_float64_difference": 3.637978807091713e-12,
+    "row1503": {
+      "original_csv_row": 1503,
+      "internal_ip": "147.32.86.229",
+      "source_label": "BACKGROUND",
+      "window_timestamp": 1312962900,
+      "matching_model_features_float64": 757,
+      "matching_model_features_float32": 757
+    },
+    "exact_raw_log_reconstruction": false
+  },
+  "conditional_bound_counterexample_row": 1503,
+  "packet_duration_rule_adopted": false,
+  "followup": {
+    "sample_size": 128,
+    "features": 757,
+    "selection_seed": 20261013,
+    "selection_recomputed_from_source_labels": true,
+    "all_feature_vectors_match_fresh_source_audit": true,
+    "all_malicious_development": true,
+    "pilot_overlap": 0,
+    "available_malicious_development": 692,
+    "remaining_after_pilot_exclusion": 660,
+    "inputs_sha256": "f67408981fb225e2fc5833fdaced74ff852eb268ec4b3af116b5af18b41816c8",
+    "rows_sha256": "7d6230d364dd302f7a367adba184eeafc24ae7fd06b6266b156ae395ff0e2128",
+    "profile_sha256": "c50480f6abbea7629a31f908e75c561e9147109e995e4ca6baeb56b922a69ed7",
+    "status": "inputs_frozen_attacks_not_run",
+    "attacks_executed": 0
+  },
+  "model_scoring_performed": false,
+  "test_rows_evaluated": 0,
+  "limitations": [
+    "The exact original Zeek version, connection-log CSV conversion, collection configuration and row-to-UID mapping are not recovered.",
+    "Synthetic connection-CSV fixtures demonstrate extractor behavior only, not packet feasibility or malicious functionality.",
+    "The baseline actually supplies 757 model features: 756 aggregate features plus window_timestamp.",
+    "The frozen compatibility scaler was originally fitted on all benchmark feature rows. This inherited limitation remains.",
+    "No native test rows are parsed or scored. Full asset bytes are hashed for integrity."
+  ]
+}
